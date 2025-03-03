@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "cobblemon_paleontologist",
+  "version": "${version}",
+  "name": "Cobblemon Paleontologist",
+  "description": "",
+  "authors": ["BaLLducked"],
+  "contact": {},
+  "license": "GPL-3.0",
+  "icon": "assets/cobblemon_paleontologist/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "net.hana.cobblemon_paleontologist.client.CobblemonPaleontologistClient"
+    ],
+    "main": [
+      "net.hana.cobblemon_paleontologist.CobblemonPaleontologist"
+    ],
+    "fabric-datagen": [
+      "net.hana.cobblemon_paleontologist.CobblemonPaleontologistDatagen"
+    ]
+  },
+  "mixins": [
+    "cobblemon-paleontologist.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
