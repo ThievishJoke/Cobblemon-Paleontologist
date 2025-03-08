@@ -1,0 +1,30 @@
+name: Check release
+
+on:
+    schedule:
+        - cron: "*/5 * * * *"
+    workflow_dispatch:
+
+jobs:
+    check-release:
+        name: Check Modrinth API and post to Discord
+        runs-on: windows-latest
+        steps:
+          - name: Checkout repo
+            uses: actions/checkout@v4
+            with:
+              ref: "master"
+          
+          - name: Run script
+            run: |
+              cd ${{ github.workspace }}
+              .\.github\script.ps1
+            env:
+              WEBHOOKURL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+            
+          - name: Commit & push changes
+            run: |
+              git config user.name GitHub Actions
+              git config user.email actions@github.com
+              git commit .github\version_id.txt -m "Update latest Version ID"
+              git push
