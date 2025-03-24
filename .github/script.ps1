@@ -36,7 +36,7 @@ if ($version_id -ne $previous_version_id) {
     # Update the version ID file
     Set-Content -Path $versionFilePath -Value $version_id
 
-    $url = "https://modrinth.com/datapack/cobblemon-paleontology/version/$version_id"
+    $url = "https://modrinth.com/mod/cobblemon-paleontology/version/$version_id"
 
     # Construct the Discord message payload
     $payload = @{
