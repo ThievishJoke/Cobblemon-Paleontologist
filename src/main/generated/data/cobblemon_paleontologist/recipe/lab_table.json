@@ -2,26 +2,17 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "B": {
-      "item": "minecraft:brush"
-    },
     "F": {
       "tag": "minecraft:planks"
     },
-    "O": {
-      "item": "minecraft:brewing_stand"
-    },
     "S": {
       "item": "minecraft:deepslate"
-    },
-    "V": {
-      "item": "minecraft:stick"
     }
   },
   "pattern": [
-    "OB ",
-    "SSS",
-    "FVF"
+    "   ",
+    "SS ",
+    "FF "
   ],
   "result": {
     "count": 1,
