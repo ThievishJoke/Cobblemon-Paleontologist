@@ -23,6 +23,6 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("FF ")
                 .define('S', Blocks.DEEPSLATE)
                 .define('F', ItemTags.PLANKS)
-                .unlockedBy("has_deepslate", has(Blocks.DEEPSLATE))
+                .unlockedBy("has_cobblemon_pal_deepslate", has(Blocks.DEEPSLATE))
                 .save(recipeOutput);    }
 }

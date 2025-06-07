@@ -6,7 +6,7 @@ plugins {
     id 'idea'
     id 'maven-publish'
     id 'net.neoforged.moddev' version '1.0.14'
-    id 'org.jetbrains.kotlin.jvm' version '1.9.10'
+    id 'org.jetbrains.kotlin.jvm' version '2.1.0'
 }
 
 tasks.named('wrapper', Wrapper).configure {
@@ -140,7 +140,6 @@ dependencies {
 
     implementation("com.cobblemon:neoforge:1.6.1+1.21.1")
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
-    implementation "thedarkcolour:kotlinforforge:$kff_version"
 
     // Example mod dependency using a mod jar from ./libs with a flat dir repository
     // This maps to ./libs/coolmod-${mc_version}-${coolmod_version}.jar
