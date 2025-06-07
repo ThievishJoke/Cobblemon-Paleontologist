@@ -1,19 +1,26 @@
 package net.hana.cobblemon_paleontologist.datagen;
 
-import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
-import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.hana.cobblemon_paleontologist.block.ModBlocks;
-import net.minecraft.registry.RegistryWrapper;
+import net.minecraft.core.Holder;
+import net.minecraft.core.HolderLookup;
+import net.minecraft.data.loot.BlockLootSubProvider;
+import net.minecraft.world.flag.FeatureFlags;
+import net.minecraft.world.level.block.Block;
 
-import java.util.concurrent.CompletableFuture;
+import java.util.Set;
 
-public class ModLootTableGen extends FabricBlockLootTableProvider {
-    public ModLootTableGen(FabricDataOutput dataOutput, CompletableFuture<RegistryWrapper.WrapperLookup> registryLookup) {
-        super(dataOutput, registryLookup);
+public class ModLootTableGen extends BlockLootSubProvider {
+    protected  ModLootTableGen(HolderLookup.Provider registries) {
+        super(Set.of(), FeatureFlags.REGISTRY.allFlags(), registries);
     }
 
     @Override
-    public void generate() {
-        addDrop(ModBlocks.LAB_TABLE);
+    protected void generate() {
+        dropSelf(ModBlocks.LAB_TABLE.get());
+    }
+
+    @Override
+    protected Iterable<Block> getKnownBlocks() {
+        return ModBlocks.BLOCKS.getEntries().stream().map(Holder::value)::iterator;
     }
 }

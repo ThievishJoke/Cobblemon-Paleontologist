@@ -1,32 +1,33 @@
 package net.hana.cobblemon_paleontologist.datagen;
 
-import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
-import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.hana.cobblemon_paleontologist.block.ModBlocks;
-import net.minecraft.block.Blocks;
-import net.minecraft.data.server.recipe.RecipeExporter;
-import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
-import net.minecraft.recipe.book.RecipeCategory;
-import net.minecraft.registry.RegistryWrapper;
-import net.minecraft.registry.tag.ItemTags;
+import net.minecraft.core.HolderLookup;
+import net.minecraft.data.PackOutput;
+import net.minecraft.data.recipes.*;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.ItemTags;
+import net.minecraft.world.item.crafting.*;
+import net.minecraft.world.level.ItemLike;
+import net.minecraft.world.level.block.Blocks;
+import net.neoforged.neoforge.common.conditions.IConditionBuilder;
 
+import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
-public class ModRecipeGen extends FabricRecipeProvider {
-
-    public ModRecipeGen(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
-        super(output, registriesFuture);
+public class ModRecipeGen extends RecipeProvider implements IConditionBuilder {
+    public ModRecipeGen(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
+        super(output, registries);
     }
 
     @Override
-    public void generate(RecipeExporter exporter) {
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.LAB_TABLE)
+    protected void buildRecipes(RecipeOutput recipeOutput) {
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.LAB_TABLE.get())
                 .pattern("   ")
                 .pattern("SS ")
                 .pattern("FF ")
-                .input('S', Blocks.DEEPSLATE)
-                .input('F', ItemTags.PLANKS)
-                .criterion(hasItem(Blocks.DEEPSLATE), conditionsFromTag(ItemTags.PLANKS))
-                .offerTo(exporter);
+                .define('S', Blocks.DEEPSLATE)
+                .define('F', ItemTags.PLANKS)
+                .unlockedBy("has_deepslate", has(Blocks.DEEPSLATE))
+                .save(recipeOutput);
     }
 }

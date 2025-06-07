@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "F": {
+      "tag": "minecraft:planks"
+    },
+    "S": {
+      "item": "minecraft:deepslate"
+    }
+  },
+  "pattern": [
+    "   ",
+    "SS ",
+    "FF "
+  ],
+  "result": {
+    "count": 1,
+    "id": "cobblemon_paleontologist:lab_table"
+  }
+}

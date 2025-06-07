@@ -1,65 +1,42 @@
 package net.hana.cobblemon_paleontologist;
 
-import com.cobblemon.mod.common.CobblemonItems;
 import com.google.common.collect.ImmutableSet;
-import net.fabricmc.api.ModInitializer;
-import net.fabricmc.fabric.api.object.builder.v1.trade.TradeOfferHelper;
-import net.fabricmc.fabric.api.object.builder.v1.world.poi.PointOfInterestHelper;
 import net.hana.cobblemon_paleontologist.block.ModBlocks;
-import net.minecraft.block.Block;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
-import net.minecraft.registry.Registries;
-import net.minecraft.registry.Registry;
-import net.minecraft.registry.RegistryKey;
-import net.minecraft.registry.RegistryKeys;
-import net.minecraft.sound.SoundEvents;
-import net.minecraft.util.Identifier;
-import net.minecraft.village.TradeOffer;
-import net.minecraft.village.TradedItem;
-import net.minecraft.village.VillagerProfession;
-import net.minecraft.world.poi.PointOfInterestType;
+import net.hana.cobblemon_paleontologist.item.ModItems;
+import net.hana.cobblemon_paleontologist.recipe.ModRecipes;
+import net.hana.cobblemon_paleontologist.villager.ModVillagers;
+import net.neoforged.bus.api.IEventBus;
+import net.neoforged.fml.ModContainer;
+import net.neoforged.fml.common.Mod;
+import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.neoforged.neoforge.common.NeoForge;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-public class CobblemonPaleontologist implements ModInitializer {
+@Mod(CobblemonPaleontologist.MOD_ID)
+public class CobblemonPaleontologist {
     public static final String MOD_ID = "cobblemon_paleontologist";
     public static final Logger LOGGER = LogManager.getLogger(MOD_ID);
 
 
-    @Override
-    public void onInitialize() {
-        ModBlocks.registerModBlocks();
-        registerVillagers();
-        registerCustomTrades();
+    public CobblemonPaleontologist(IEventBus modEventBus, ModContainer modContainer) {
+        modEventBus.addListener(this::commonSetup);
+
+        NeoForge.EVENT_BUS.register(this);
+
+        ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
+
+        ModVillagers.register(modEventBus);
+        ModRecipes.register(modEventBus);
     }
 
-    public static final RegistryKey<PointOfInterestType> LAB_POI_KEY = registerPoiKey("lab_poi");
-    public static final PointOfInterestType LAB_POI = registerPOI("lab_poi", ModBlocks.LAB_TABLE);
-
-    public static final VillagerProfession PALEONTOLOGIST = registerProfession("cobblemon_paleontologist", LAB_POI_KEY);
-
-
-    private static VillagerProfession registerProfession(String name, RegistryKey<PointOfInterestType> type) {
-        return Registry.register(Registries.VILLAGER_PROFESSION, Identifier.of(CobblemonPaleontologist.MOD_ID, name),
-                new VillagerProfession(name, entry -> entry.matchesKey(type), entry -> entry.matchesKey(type),
-                        ImmutableSet.of(), ImmutableSet.of(), SoundEvents.ENTITY_VILLAGER_WORK_LIBRARIAN));
+    private void commonSetup(final FMLCommonSetupEvent event) {
     }
 
-    private static PointOfInterestType registerPOI(String name, Block block) {
-        return PointOfInterestHelper.register(Identifier.of(CobblemonPaleontologist.MOD_ID, name),
-                1, 1, block);
-    }
-
-    private static RegistryKey<PointOfInterestType> registerPoiKey(String name) {
-        return RegistryKey.of(RegistryKeys.POINT_OF_INTEREST_TYPE, Identifier.of(CobblemonPaleontologist.MOD_ID, name));
-    }
-
-    public static void registerVillagers() {
-        CobblemonPaleontologist.LOGGER.info("Registering Villagers for " + CobblemonPaleontologist.MOD_ID);
-    }
 
     private static void registerCustomTrades() {
+        /*
         TradeOfferHelper.registerVillagerOffers(PALEONTOLOGIST, 1, factories -> {
             factories.add((entity, random) -> new TradeOffer(
                     new TradedItem(Items.EMERALD, 16),
@@ -225,5 +202,6 @@ public class CobblemonPaleontologist implements ModInitializer {
                     new ItemStack(CobblemonItems.SKULL_FOSSIL), 3, 10, 0.05f
             ));
         });
+         */
     }
 }
