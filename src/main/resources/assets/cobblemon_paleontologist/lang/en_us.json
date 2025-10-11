@@ -1,4 +1,10 @@
 {
   "block.cobblemon_paleontologist.lab_table": "Lab Table",
-  "entity.minecraft.villager.cobblemon_paleontologist": "Palaeontologist"
+  "block.cobblemon_paleontologist.bone_end_block": "Bone End Block",
+  "block.cobblemon_paleontologist.bone_block_stairs": "Bone Block Stairs",
+  "block.cobblemon_paleontologist.bone_block_slab": "Bone Block Slab",
+  "item.cobblemon_paleontologist.iron_chisel": "Iron Chisel",
+  "item.cobblemon_paleontologist.fossil_concretion": "Concretion",
+  "entity.minecraft.villager.cobblemon_paleontologist": "Palaeontologist",
+  "itemgroup.paleontology_item_group": "Paleontology"
 }

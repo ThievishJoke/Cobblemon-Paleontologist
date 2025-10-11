@@ -1,4 +1,8 @@
 {
   "block.cobblemon_paleontologist.lab_table": "Labtafel",
-  "entity.minecraft.villager.cobblemon_paleontologist": "Paleontoloog"
+  "block.cobblemon_paleontologist.bone_end_block": "Bot uiteind blok",
+  "block.cobblemon_paleontologist.bone_block_stairs": "Bot bloktrap",
+  "block.cobblemon_paleontologist.bone_block_slab": "Bot bloktreden",
+  "entity.minecraft.villager.cobblemon_paleontologist": "Paleontoloog",
+  "itemgroup.paleontology_item_group": "Paleontologie"
 }

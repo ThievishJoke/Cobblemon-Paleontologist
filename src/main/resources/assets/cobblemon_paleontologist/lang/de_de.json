@@ -1,4 +1,8 @@
 {
   "block.cobblemon_paleontologist.lab_table": "Labortisch",
-  "entity.minecraft.villager.cobblemon_paleontologist": "Paläontologe"
+  "block.cobblemon_paleontologist.bone_end_block": "Knochenendblock",
+  "block.cobblemon_paleontologist.bone_block_stairs": "Knochenblock Treppe",
+  "block.cobblemon_paleontologist.bone_block_slab": "Knochenblockplatte",
+  "entity.minecraft.villager.cobblemon_paleontologist": "Paläontologe",
+  "itemgroup.paleontology_item_group": "Paläontologie"
 }

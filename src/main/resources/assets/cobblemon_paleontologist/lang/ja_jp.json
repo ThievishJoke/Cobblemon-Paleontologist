@@ -1,4 +1,8 @@
 {
   "block.cobblemon_paleontologist.lab_table": "ラボテーブル",
-  "entity.minecraft.villager.cobblemon_paleontologist": "古生物学者"
+  "block.cobblemon_paleontologist.bone_end_block": "骨の端ブロック",
+  "block.cobblemon_paleontologist.bone_block_stairs": "骨ブロックの階段",
+  "block.cobblemon_paleontologist.bone_block_slab": "骨ブロックのハーフブロック",
+  "entity.minecraft.villager.cobblemon_paleontologist": "古生物学者",
+  "itemgroup.paleontology_item_group": "古生物学"
 }

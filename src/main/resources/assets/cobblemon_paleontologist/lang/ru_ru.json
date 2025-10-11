@@ -1,4 +1,8 @@
 {
   "block.cobblemon_paleontologist.lab_table": "Лабораторный стол",
-  "entity.minecraft.villager.cobblemon_paleontologist": "Палеонтолог"
+  "block.cobblemon_paleontologist.bone_end_block": "Концевой костяной блок",
+  "block.cobblemon_paleontologist.bone_block_stairs": "Костяная блок-лестница",
+  "block.cobblemon_paleontologist.bone_block_slab": "Костяная блок-плита",
+  "entity.minecraft.villager.cobblemon_paleontologist": "Палеонтолог",
+  "itemgroup.paleontology_item_group": "Палеонтология"
 }

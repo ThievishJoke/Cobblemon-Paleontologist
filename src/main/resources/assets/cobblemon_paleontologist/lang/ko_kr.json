@@ -1,4 +1,8 @@
 {
   "block.cobblemon_paleontologist.lab_table": "실험실 테이블",
-  "entity.minecraft.villager.cobblemon_paleontologist": "고생물학자"
+  "block.cobblemon_paleontologist.bone_end_block": "뼈 끝 블록",
+  "block.cobblemon_paleontologist.bone_block_stairs": "뼈 블록 계단",
+  "block.cobblemon_paleontologist.bone_block_slab": "뼈 블록 반블록",
+  "entity.minecraft.villager.cobblemon_paleontologist": "고생물학자",
+  "itemgroup.paleontology_item_group": "고생물학"
 }

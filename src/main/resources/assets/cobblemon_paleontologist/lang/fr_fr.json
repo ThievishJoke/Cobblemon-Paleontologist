@@ -1,4 +1,8 @@
 {
   "block.cobblemon_paleontologist.lab_table": "Table de laboratoire",
-  "entity.minecraft.villager.cobblemon_paleontologist": "Paléontologue"
+  "block.cobblemon_paleontologist.bone_end_block": "Bloc d'extrémité osseuse",
+  "block.cobblemon_paleontologist.bone_block_stairs": "Escaliers en bloc d'os",
+  "block.cobblemon_paleontologist.bone_block_slab": "Dalle en bloc d'os",
+  "entity.minecraft.villager.cobblemon_paleontologist": "Paléontologue",
+  "itemgroup.paleontology_item_group": "Paléontologie"
 }

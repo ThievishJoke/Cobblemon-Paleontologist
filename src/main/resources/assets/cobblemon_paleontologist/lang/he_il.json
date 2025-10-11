@@ -1,4 +1,8 @@
 {
   "block.cobblemon_paleontologist.lab_table": "שולחן מעבדה",
-  "entity.minecraft.villager.cobblemon_paleontologist": "פלאונטולוג"
+  "block.cobblemon_paleontologist.bone_end_block": "בלוק סוף עצם",
+  "block.cobblemon_paleontologist.bone_block_stairs": "בלוק מדרגות עצם",
+  "block.cobblemon_paleontologist.bone_block_slab": "לוחית עצם",
+  "entity.minecraft.villager.cobblemon_paleontologist": "פלאונטולוג",
+  "itemgroup.paleontology_item_group": "פָּלֵאוֹנטוֹלוֹגִיָה"
 }
