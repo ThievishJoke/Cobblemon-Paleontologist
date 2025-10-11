@@ -1,0 +1,5 @@
+// 1.21.1	2025-10-10T18:44:39.2131575	Cobblemon Paleontologist/Block Loot Tables
+187cd408455abf487807dc994962d8a97146ce63 data\cobblemon_paleontologist\loot_table\blocks\lab_table.json
+ea110746f6549ceb7bc56ef41d1a1f5496b104f8 data\cobblemon_paleontologist\loot_table\blocks\bone_end_block.json
+3a731b3252bc51fbc9ca5368ae26259545ff2a0d data\cobblemon_paleontologist\loot_table\blocks\bone_block_slab.json
+23e067051f773903bbba4ef5cc0d8c5a2a557d7a data\cobblemon_paleontologist\loot_table\blocks\bone_block_stairs.json
