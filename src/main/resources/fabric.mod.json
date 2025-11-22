@@ -18,12 +18,6 @@
     ],
     "fabric-datagen": [
       "net.hana.cobblemon_paleontologist.CobblemonPaleontologistDatagen"
-    ],
-    "rei_client": [
-      "net.hana.cobblemon_paleontologist.compat.jei.JEIcompat"
-    ],
-    "emi": [
-      "net.hana.cobblemon_paleontologist.compat.emi.EMIcompat"
     ]
   },
   "mixins": [
