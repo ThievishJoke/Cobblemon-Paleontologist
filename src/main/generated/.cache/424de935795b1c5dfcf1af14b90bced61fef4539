@@ -1,3 +1,4 @@
-// 1.21.1	2025-10-10T18:44:39.214174	Cobblemon Paleontologist/Tags for minecraft:block
-9ab0e245714dde79ef8f00b00ca4aca16e33b564 data\minecraft\tags\block\mineable\pickaxe.json
-9ab0e245714dde79ef8f00b00ca4aca16e33b564 data\minecraft\tags\block\mineable\axe.json
+// 1.21.1	2025-11-21T20:22:48.9816297	Cobblemon Paleontologist/Tags for minecraft:block
+58f8417ee8acc86d2515781d373d3e0a5a555cac data\minecraft\tags\block\mineable\pickaxe.json
+58f8417ee8acc86d2515781d373d3e0a5a555cac data\minecraft\tags\block\mineable\axe.json
+58f8417ee8acc86d2515781d373d3e0a5a555cac data\cobblemon_paleontologist\tags\block\lab_tables.json

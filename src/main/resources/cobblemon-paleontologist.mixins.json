@@ -4,6 +4,7 @@
   "package": "net.hana.cobblemon_paleontologist.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
+    "PoiTypesAccessor"
   ],
   "client": [
   ],

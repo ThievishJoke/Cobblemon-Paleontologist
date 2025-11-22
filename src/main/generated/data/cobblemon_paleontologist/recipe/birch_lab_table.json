@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "F": {
+      "item": "minecraft:birch_planks"
+    },
+    "S": {
+      "item": "minecraft:deepslate"
+    }
+  },
+  "pattern": [
+    "   ",
+    "SS ",
+    "FF "
+  ],
+  "result": {
+    "count": 1,
+    "id": "cobblemon_paleontologist:birch_lab_table"
+  }
+}

@@ -1,5 +1,16 @@
 {
   "values": [
-    "cobblemon_paleontologist:lab_table"
+    "cobblemon_paleontologist:lab_table",
+    "cobblemon_paleontologist:spruce_lab_table",
+    "cobblemon_paleontologist:birch_lab_table",
+    "cobblemon_paleontologist:jungle_lab_table",
+    "cobblemon_paleontologist:acacia_lab_table",
+    "cobblemon_paleontologist:dark_oak_lab_table",
+    "cobblemon_paleontologist:mangrove_lab_table",
+    "cobblemon_paleontologist:cherry_lab_table",
+    "cobblemon_paleontologist:bamboo_lab_table",
+    "cobblemon_paleontologist:warped_lab_table",
+    "cobblemon_paleontologist:crimson_lab_table",
+    "cobblemon_paleontologist:apricorn_lab_table"
   ]
 }

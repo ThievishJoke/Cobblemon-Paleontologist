@@ -9,6 +9,8 @@ import net.minecraft.util.Identifier;
 
 public class ModTags {
     public static class Blocks {
+        public static final TagKey<Block> LAB_TABLES = createTag("lab_tables");
+
         private static TagKey<Block> createTag(String name) {
             return TagKey.of(RegistryKeys.BLOCK, Identifier.of(CobblemonPaleontologist.MOD_ID, name));
         }
@@ -16,6 +18,7 @@ public class ModTags {
 
     public static class Items {
         public static final TagKey<Item> CHISELS = createTag("chisels");
+        public static final TagKey<Item> CONCRETION_REWARDS = createTag("concretion_rewards");
 
         private static TagKey<Item> createTag(String name) {
             return TagKey.of(RegistryKeys.ITEM, Identifier.of(CobblemonPaleontologist.MOD_ID, name));

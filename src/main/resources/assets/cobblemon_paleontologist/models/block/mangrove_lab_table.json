@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "cobblemon_paleontologist:block/mangrove_lab_table_bottom",
+    "side": "cobblemon_paleontologist:block/mangrove_lab_table_side",
+    "top": "cobblemon_paleontologist:block/lab_table_top"
+  }
+}

@@ -25,12 +25,11 @@ public class LabTableBlockEntityRenderer implements BlockEntityRenderer<LabTable
     public void render(LabTableBlockEntity entity, float tickDelta, MatrixStack matrices,
                        VertexConsumerProvider vertexConsumers, int light, int overlay) {
         ItemRenderer itemRenderer = MinecraftClient.getInstance().getItemRenderer();
-        ItemStack stack = entity.getStack(0);
+        ItemStack stack = entity.getStack(5);
 
         matrices.push();
         matrices.translate(0.5f, 1.25f, 0.5f);
         matrices.scale(0.5f, 0.5f, 0.5f);
-        //matrices.multiply(RotationAxis.POSITIVE_X.rotationDegrees(90));
         matrices.multiply(RotationAxis.POSITIVE_Y.rotationDegrees(entity.getRenderingRotation()));
 
         itemRenderer.renderItem(stack, ModelTransformationMode.FIXED, getLightLevel(entity.getWorld(),

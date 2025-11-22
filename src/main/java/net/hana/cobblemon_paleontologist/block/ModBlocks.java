@@ -1,6 +1,5 @@
 package net.hana.cobblemon_paleontologist.block;
 
-import com.mojang.serialization.MapCodec;
 import net.hana.cobblemon_paleontologist.CobblemonPaleontologist;
 import net.hana.cobblemon_paleontologist.block.custom.LabTable;
 import net.minecraft.block.*;
@@ -13,6 +12,39 @@ import net.minecraft.util.Identifier;
 
 public class ModBlocks {
     public static final Block LAB_TABLE = registerBlock("lab_table",
+            new LabTable(AbstractBlock.Settings.create().sounds(BlockSoundGroup.STONE).strength(1.0f).nonOpaque()) {
+            });
+    public static final Block SPRUCE_LAB_TABLE = registerBlock("spruce_lab_table",
+            new LabTable(AbstractBlock.Settings.create().sounds(BlockSoundGroup.STONE).strength(1.0f).nonOpaque()) {
+            });
+    public static final Block BIRCH_LAB_TABLE = registerBlock("birch_lab_table",
+            new LabTable(AbstractBlock.Settings.create().sounds(BlockSoundGroup.STONE).strength(1.0f).nonOpaque()) {
+            });
+    public static final Block JUNGLE_LAB_TABLE = registerBlock("jungle_lab_table",
+            new LabTable(AbstractBlock.Settings.create().sounds(BlockSoundGroup.STONE).strength(1.0f).nonOpaque()) {
+            });
+    public static final Block ACACIA_LAB_TABLE = registerBlock("acacia_lab_table",
+            new LabTable(AbstractBlock.Settings.create().sounds(BlockSoundGroup.STONE).strength(1.0f).nonOpaque()) {
+            });
+    public static final Block DARK_OAK_LAB_TABLE = registerBlock("dark_oak_lab_table",
+            new LabTable(AbstractBlock.Settings.create().sounds(BlockSoundGroup.STONE).strength(1.0f).nonOpaque()) {
+            });
+    public static final Block MANGROVE_LAB_TABLE = registerBlock("mangrove_lab_table",
+            new LabTable(AbstractBlock.Settings.create().sounds(BlockSoundGroup.STONE).strength(1.0f).nonOpaque()) {
+            });
+    public static final Block CHERRY_LAB_TABLE = registerBlock("cherry_lab_table",
+            new LabTable(AbstractBlock.Settings.create().sounds(BlockSoundGroup.STONE).strength(1.0f).nonOpaque()) {
+            });
+    public static final Block BAMBOO_LAB_TABLE = registerBlock("bamboo_lab_table",
+            new LabTable(AbstractBlock.Settings.create().sounds(BlockSoundGroup.STONE).strength(1.0f).nonOpaque()) {
+            });
+    public static final Block WARPED_LAB_TABLE = registerBlock("warped_lab_table",
+            new LabTable(AbstractBlock.Settings.create().sounds(BlockSoundGroup.STONE).strength(1.0f).nonOpaque()) {
+            });
+    public static final Block CRIMSON_LAB_TABLE = registerBlock("crimson_lab_table",
+            new LabTable(AbstractBlock.Settings.create().sounds(BlockSoundGroup.STONE).strength(1.0f).nonOpaque()) {
+            });
+    public static final Block APRICORN_LAB_TABLE = registerBlock("apricorn_lab_table",
             new LabTable(AbstractBlock.Settings.create().sounds(BlockSoundGroup.STONE).strength(1.0f).nonOpaque()) {
             });
 

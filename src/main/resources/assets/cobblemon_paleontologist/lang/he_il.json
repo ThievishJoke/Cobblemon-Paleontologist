@@ -1,8 +1,23 @@
 {
   "block.cobblemon_paleontologist.lab_table": "שולחן מעבדה",
+  "block.cobblemon_paleontologist.spruce_lab_table": "שולחן מעבדה מחורש",
+  "block.cobblemon_paleontologist.birch_lab_table": "שולחן מעבדה מאשוח",
+  "block.cobblemon_paleontologist.jungle_lab_table": "שולחן מעבדה מיער ג'ונגל",
+  "block.cobblemon_paleontologist.acacia_lab_table": "שולחן מעבדה מאקציה",
+  "block.cobblemon_paleontologist.dark_oak_lab_table": "שולחן מעבדה מעץ אלון כהה",
+  "block.cobblemon_paleontologist.mangrove_lab_table": "שולחן מעבדה ממנגרו",
+  "block.cobblemon_paleontologist.cherry_lab_table": "שולחן מעבדה מדובדבן",
+  "block.cobblemon_paleontologist.bamboo_lab_table": "שולחן מעבדה מבמבוק",
+  "block.cobblemon_paleontologist.warped_lab_table": "שולחן מעבדה מעוות",
+  "block.cobblemon_paleontologist.crimson_lab_table": "שולחן מעבדה ארגמני",
+  "block.cobblemon_paleontologist.apricorn_lab_table": "אפריקורן מעבדה ארגמני",
   "block.cobblemon_paleontologist.bone_end_block": "בלוק סוף עצם",
   "block.cobblemon_paleontologist.bone_block_stairs": "בלוק מדרגות עצם",
   "block.cobblemon_paleontologist.bone_block_slab": "לוחית עצם",
   "entity.minecraft.villager.cobblemon_paleontologist": "פלאונטולוג",
-  "itemgroup.paleontology_item_group": "פָּלֵאוֹנטוֹלוֹגִיָה"
+  "itemgroup.paleontology_item_group": "פָּלֵאוֹנטוֹלוֹגִיָה",
+  "item.cobblemon_paleontologist.iron_chisel": "אזמל ברזל",
+  "item.cobblemon_paleontologist.diamond_chisel": "אזמל יהלום",
+  "item.cobblemon_paleontologist.fossil_concretion": "התמצקות",
+  "container.paleontology_lab_table": "שולחן מעבדה"
 }

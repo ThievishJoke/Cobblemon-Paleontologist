@@ -17,12 +17,24 @@ public class ModItemGroups {
             FabricItemGroup.builder().displayName(Text.translatableWithFallback("itemgroup.paleontology_item_group", "Paleontology"))
                     .icon(() -> new ItemStack(Blocks.BONE_BLOCK)).entries((displayContext, entries) -> {
                         entries.add(ModBlocks.LAB_TABLE);
+                        entries.add(ModBlocks.SPRUCE_LAB_TABLE);
+                        entries.add(ModBlocks.BIRCH_LAB_TABLE);
+                        entries.add(ModBlocks.JUNGLE_LAB_TABLE);
+                        entries.add(ModBlocks.ACACIA_LAB_TABLE);
+                        entries.add(ModBlocks.DARK_OAK_LAB_TABLE);
+                        entries.add(ModBlocks.MANGROVE_LAB_TABLE);
+                        entries.add(ModBlocks.CHERRY_LAB_TABLE);
+                        entries.add(ModBlocks.BAMBOO_LAB_TABLE);
+                        entries.add(ModBlocks.WARPED_LAB_TABLE);
+                        entries.add(ModBlocks.CRIMSON_LAB_TABLE);
+                        entries.add(ModBlocks.APRICORN_LAB_TABLE);
                         entries.add(Blocks.BONE_BLOCK);
                         entries.add(ModBlocks.BONE_END_BLOCK);
                         entries.add(ModBlocks.BONE_BLOCK_STAIRS);
                         entries.add(ModBlocks.BONE_BLOCK_SLAB);
                         entries.add(ModItems.FOSSIL_CONCRETION);
                         entries.add(ModItems.IRON_CHISEL);
+                        entries.add(ModItems.DIAMOND_CHISEL);
                     }).build());
 
     public static void registerItemGroups() {
