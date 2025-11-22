@@ -1,0 +1,16 @@
+package net.hana.cobblemon_paleontologist.compat.emi;
+
+import dev.emi.emi.api.recipe.EmiRecipeCategory;
+import dev.emi.emi.api.render.EmiTexture;
+import net.minecraft.util.Identifier;
+
+public class FossilProcessingEmiCategory extends EmiRecipeCategory {
+
+    public static final FossilProcessingEmiCategory INSTANCE = new FossilProcessingEmiCategory();
+
+    public static final Identifier UID = Identifier.of("cobblemon_paleontologist", "fossil_processing");
+
+    private FossilProcessingEmiCategory() {
+        super(UID, EmiTexture.EMPTY_ARROW);
+    }
+}

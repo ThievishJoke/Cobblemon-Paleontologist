@@ -1,8 +1,23 @@
 {
   "block.cobblemon_paleontologist.lab_table": "Table de laboratoire",
-  "block.cobblemon_paleontologist.bone_end_block": "Bloc d'extrémité osseuse",
-  "block.cobblemon_paleontologist.bone_block_stairs": "Escaliers en bloc d'os",
-  "block.cobblemon_paleontologist.bone_block_slab": "Dalle en bloc d'os",
+  "block.cobblemon_paleontologist.spruce_lab_table": "Table de laboratoire en épicéa",
+  "block.cobblemon_paleontologist.birch_lab_table": "Table de laboratoire en bouleau",
+  "block.cobblemon_paleontologist.jungle_lab_table": "Table de laboratoire en jungle",
+  "block.cobblemon_paleontologist.acacia_lab_table": "Table de laboratoire en acacia",
+  "block.cobblemon_paleontologist.dark_oak_lab_table": "Table de laboratoire en chêne foncé",
+  "block.cobblemon_paleontologist.mangrove_lab_table": "Table de laboratoire en mangrove",
+  "block.cobblemon_paleontologist.cherry_lab_table": "Table de laboratoire en cerisier",
+  "block.cobblemon_paleontologist.bamboo_lab_table": "Table de laboratoire en bambou",
+  "block.cobblemon_paleontologist.warped_lab_table": "Table de laboratoire déformée",
+  "block.cobblemon_paleontologist.crimson_lab_table": "Table de laboratoire cramoisie",
+  "block.cobblemon_paleontologist.apricorn_lab_table": "Table de laboratoire en noigrume",
+  "block.cobblemon_paleontologist.bone_end_block": "Bloc d'extrémité d'os",
+  "block.cobblemon_paleontologist.bone_block_stairs": "Escalier en blocs d'os",
+  "block.cobblemon_paleontologist.bone_block_slab": "Dalle en blocs d'os",
+  "item.cobblemon_paleontologist.iron_chisel": "Ciseau en fer",
+  "item.cobblemon_paleontologist.diamond_chisel": "Ciseau en diamant",
+  "item.cobblemon_paleontologist.fossil_concretion": "Concrétion",
   "entity.minecraft.villager.cobblemon_paleontologist": "Paléontologue",
-  "itemgroup.paleontology_item_group": "Paléontologie"
+  "itemgroup.paleontology_item_group": "Paléontologie",
+  "container.paleontology_lab_table": "Table de laboratoire"
 }

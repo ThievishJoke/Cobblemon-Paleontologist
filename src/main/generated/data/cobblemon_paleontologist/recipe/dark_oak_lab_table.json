@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "F": {
+      "item": "minecraft:dark_oak_planks"
+    },
+    "S": {
+      "item": "minecraft:deepslate"
+    }
+  },
+  "pattern": [
+    "   ",
+    "SS ",
+    "FF "
+  ],
+  "result": {
+    "count": 1,
+    "id": "cobblemon_paleontologist:dark_oak_lab_table"
+  }
+}

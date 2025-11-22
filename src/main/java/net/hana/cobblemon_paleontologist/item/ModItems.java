@@ -12,6 +12,8 @@ import net.minecraft.util.Identifier;
 public class ModItems {
     public static final Item IRON_CHISEL = registerItem("iron_chisel",
             new ChiselItem(new Item.Settings().maxDamage(128)));
+    public static final Item DIAMOND_CHISEL = registerItem("diamond_chisel",
+            new ChiselItem(new Item.Settings().maxDamage(256)));
     public static final Item FOSSIL_CONCRETION = registerItem("fossil_concretion",
             new Item(new Item.Settings()));
 

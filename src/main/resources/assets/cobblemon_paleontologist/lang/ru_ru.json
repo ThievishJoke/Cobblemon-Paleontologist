@@ -1,8 +1,23 @@
 {
   "block.cobblemon_paleontologist.lab_table": "Лабораторный стол",
+  "block.cobblemon_paleontologist.spruce_lab_table": "Лабораторный стол из ели",
+  "block.cobblemon_paleontologist.birch_lab_table": "Лабораторный стол из берёзы",
+  "block.cobblemon_paleontologist.jungle_lab_table": "Лабораторный стол из джунглей",
+  "block.cobblemon_paleontologist.acacia_lab_table": "Лабораторный стол из акации",
+  "block.cobblemon_paleontologist.dark_oak_lab_table": "Лабораторный стол из тёмного дуба",
+  "block.cobblemon_paleontologist.mangrove_lab_table": "Лабораторный стол из мангрового дерева",
+  "block.cobblemon_paleontologist.cherry_lab_table": "Лабораторный стол из вишни",
+  "block.cobblemon_paleontologist.bamboo_lab_table": "Лабораторный стол из бамбука",
+  "block.cobblemon_paleontologist.warped_lab_table": "лабораторный стол из Искажённый",
+  "block.cobblemon_paleontologist.crimson_lab_table": "лабораторный стол из Алый",
+  "block.cobblemon_paleontologist.apricorn_lab_table": "лабораторный стол из желудь",
   "block.cobblemon_paleontologist.bone_end_block": "Концевой костяной блок",
   "block.cobblemon_paleontologist.bone_block_stairs": "Костяная блок-лестница",
   "block.cobblemon_paleontologist.bone_block_slab": "Костяная блок-плита",
   "entity.minecraft.villager.cobblemon_paleontologist": "Палеонтолог",
-  "itemgroup.paleontology_item_group": "Палеонтология"
+  "itemgroup.paleontology_item_group": "Палеонтология",
+  "item.cobblemon_paleontologist.iron_chisel": "Железное долото",
+  "item.cobblemon_paleontologist.diamond_chisel": "Алмазное долото",
+  "item.cobblemon_paleontologist.fossil_concretion": "Конкреция",
+  "container.paleontology_lab_table": "Лабораторный стол"
 }

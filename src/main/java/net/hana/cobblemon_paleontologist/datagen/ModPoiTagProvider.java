@@ -20,5 +20,6 @@ public class ModPoiTagProvider extends TagProvider<PointOfInterestType> {
     protected void configure(RegistryWrapper.WrapperLookup lookup) {
         this.getOrCreateTagBuilder(PointOfInterestTypeTags.ACQUIRABLE_JOB_SITE)
                 .add(CobblemonPaleontologist.LAB_POI_KEY);
+
     }
 }

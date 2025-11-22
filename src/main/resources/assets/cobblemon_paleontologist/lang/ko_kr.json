@@ -1,8 +1,23 @@
 {
   "block.cobblemon_paleontologist.lab_table": "실험실 테이블",
+  "block.cobblemon_paleontologist.spruce_lab_table": "스프루스 실험실 테이블",
+  "block.cobblemon_paleontologist.birch_lab_table": "자작나무 실험실 테이블",
+  "block.cobblemon_paleontologist.jungle_lab_table": "정글 실험실 테이블",
+  "block.cobblemon_paleontologist.acacia_lab_table": "아카시아 실험실 테이블",
+  "block.cobblemon_paleontologist.dark_oak_lab_table": "다크 오크 실험실 테이블",
+  "block.cobblemon_paleontologist.mangrove_lab_table": "맹그로브 실험실 테이블",
+  "block.cobblemon_paleontologist.cherry_lab_table": "체리색 실험실 테이블",
+  "block.cobblemon_paleontologist.bamboo_lab_table": "대나무 실험실 테이블",
+  "block.cobblemon_paleontologist.warped_lab_table": "뒤틀린 실험실 테이블",
+  "block.cobblemon_paleontologist.crimson_lab_table": "크림슨 실험실 테이블",
+  "block.cobblemon_paleontologist.apricorn_lab_table": "규토리 실험실 테이블",
   "block.cobblemon_paleontologist.bone_end_block": "뼈 끝 블록",
   "block.cobblemon_paleontologist.bone_block_stairs": "뼈 블록 계단",
-  "block.cobblemon_paleontologist.bone_block_slab": "뼈 블록 반블록",
+  "block.cobblemon_paleontologist.bone_block_slab": "뼈 블록 석판",
+  "item.cobblemon_paleontologist.iron_chisel": "철 끌",
+  "item.cobblemon_paleontologist.diamond_chisel": "다이아몬드 끌",
+  "item.cobblemon_paleontologist.fossil_concretion": "결핵",
   "entity.minecraft.villager.cobblemon_paleontologist": "고생물학자",
-  "itemgroup.paleontology_item_group": "고생물학"
+  "itemgroup.paleontology_item_group": "고생물학",
+  "container.paleontology_lab_table": "실험실 테이블"
 }

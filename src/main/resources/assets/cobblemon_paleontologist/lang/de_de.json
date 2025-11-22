@@ -1,8 +1,23 @@
 {
   "block.cobblemon_paleontologist.lab_table": "Labortisch",
+  "block.cobblemon_paleontologist.spruce_lab_table": "Fichten-Labortisch",
+  "block.cobblemon_paleontologist.birch_lab_table": "Birken-Labortisch",
+  "block.cobblemon_paleontologist.jungle_lab_table": "Dschungel-Labortisch",
+  "block.cobblemon_paleontologist.acacia_lab_table": "Akazien-Labortisch",
+  "block.cobblemon_paleontologist.dark_oak_lab_table": "Dunkel-Eichen-Labortisch",
+  "block.cobblemon_paleontologist.mangrove_lab_table": "Mangroven-Labortisch",
+  "block.cobblemon_paleontologist.cherry_lab_table": "Kirschbaum-Labortisch",
+  "block.cobblemon_paleontologist.bamboo_lab_table": "Bambus-Labortisch",
+  "block.cobblemon_paleontologist.warped_lab_table": "Verzerrter Labortisch",
+  "block.cobblemon_paleontologist.crimson_lab_table": "Purpurroter Labortisch",
+  "block.cobblemon_paleontologist.apricorn_lab_table": "Aprikoko Labortisch",
   "block.cobblemon_paleontologist.bone_end_block": "Knochenendblock",
   "block.cobblemon_paleontologist.bone_block_stairs": "Knochenblock Treppe",
   "block.cobblemon_paleontologist.bone_block_slab": "Knochenblockplatte",
   "entity.minecraft.villager.cobblemon_paleontologist": "Paläontologe",
-  "itemgroup.paleontology_item_group": "Paläontologie"
+  "itemgroup.paleontology_item_group": "Paläontologie",
+  "item.cobblemon_paleontologist.iron_chisel": "Eisenmeißel",
+  "item.cobblemon_paleontologist.diamond_chisel": "Diamantmeißel",
+  "item.cobblemon_paleontologist.fossil_concretion": "Konkretion",
+  "container.paleontology_lab_table": "Labortisch"
 }
