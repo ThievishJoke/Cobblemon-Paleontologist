@@ -88,8 +88,13 @@ public class LabTableBlockEntity extends BlockEntity implements ImplementedInven
 
     @Override
     public void setStack(int slot, ItemStack stack) {
-        inventory.set(slot, stack);
-
+        if (slot == 5 && !stack.isEmpty()) {
+            ItemStack copy = stack.copy();
+            copy.setCount(1);
+            inventory.set(slot, copy);
+        } else {
+            inventory.set(slot, stack);
+        }
         markDirty();
     }
 
@@ -145,7 +150,13 @@ public class LabTableBlockEntity extends BlockEntity implements ImplementedInven
     }
 
     public void setDisplayStack(ItemStack stack) {
-        inventory.set(5, stack);
+        if (!stack.isEmpty()) {
+            ItemStack copy = stack.copy();
+            copy.setCount(1);
+            inventory.set(5, copy);
+        } else {
+            inventory.set(5, ItemStack.EMPTY);
+        }
         markDirty();
     }
 

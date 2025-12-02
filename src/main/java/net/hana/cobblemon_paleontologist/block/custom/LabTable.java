@@ -78,20 +78,38 @@ public class LabTable extends BlockWithEntity implements BlockEntityProvider {
         }
 
         // --- Place item on pedestal/display if empty ---
-        if (labTable.isTableEmpty() && !stack.isEmpty() && !isChisel(stack) && !isBrush(stack)) {
-            labTable.setDisplayStack(stack.copyWithCount(1)); // use helper
+        if (labTable.getStack(5).isEmpty()
+                && !stack.isEmpty()
+                && !isChisel(stack)
+                && !isBrush(stack)) {
+            labTable.setDisplayStack(stack.copyWithCount(1));
             stack.decrement(1);
             labTable.markDirty();
             world.updateListeners(pos, state, state, Block.NOTIFY_ALL);
             world.playSound(player, pos, SoundEvents.ENTITY_ITEM_PICKUP, SoundCategory.BLOCKS, 1f, 2f);
+
             return ItemActionResult.SUCCESS;
         }
 
-        // --- Take item from pedestal/display if hand empty and not sneaking ---
+        // --- Take item from pedestal/display
         if (stack.isEmpty() && !player.isSneaking()) {
-            ItemStack stackOnPedestal = labTable.getStack(5);
-            if (!stackOnPedestal.isEmpty()) {
-                player.setStackInHand(Hand.MAIN_HAND, stackOnPedestal);
+            ItemStack displayed = labTable.getStack(5);
+
+            if (!displayed.isEmpty()) {
+                ItemStack returned = displayed.copy();
+                ItemStack main = player.getMainHandStack();
+                if (main.isEmpty()) {
+                    player.setStackInHand(Hand.MAIN_HAND, returned);
+                }
+                else if (ItemStack.areItemsEqual(main, returned)) {
+                    main.increment(1);
+                }
+                else {
+                    if (!player.getInventory().insertStack(returned)) {
+                        player.dropItem(returned, false);
+                    }
+                }
+                // Clear display
                 labTable.setStack(5, ItemStack.EMPTY);
                 labTable.markDirty();
                 world.updateListeners(pos, state, state, Block.NOTIFY_ALL);
@@ -99,12 +117,10 @@ public class LabTable extends BlockWithEntity implements BlockEntityProvider {
             }
             return ItemActionResult.SUCCESS;
         }
-
         if (player.isSneaking() && !world.isClient()) {
             player.openHandledScreen(labTable);
             return ItemActionResult.SUCCESS;
         }
-
         return ItemActionResult.SKIP_DEFAULT_BLOCK_INTERACTION;
     }
 
