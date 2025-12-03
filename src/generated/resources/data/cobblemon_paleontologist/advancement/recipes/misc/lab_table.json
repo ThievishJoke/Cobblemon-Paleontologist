@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_cobblemon_pal_deepslate": {
+    "has_deepslate": {
       "conditions": {
         "items": [
           {
@@ -21,7 +21,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_cobblemon_pal_deepslate"
+      "has_deepslate"
     ]
   ],
   "rewards": {

@@ -1,0 +1,23 @@
+{
+  "block.cobblemon_paleontologist.lab_table": "实验台",
+  "block.cobblemon_paleontologist.spruce_lab_table": "云杉实验台",
+  "block.cobblemon_paleontologist.birch_lab_table": "白桦实验台",
+  "block.cobblemon_paleontologist.jungle_lab_table": "丛林木实验台",
+  "block.cobblemon_paleontologist.acacia_lab_table": "金合欢实验台",
+  "block.cobblemon_paleontologist.dark_oak_lab_table": "深色橡木实验台",
+  "block.cobblemon_paleontologist.mangrove_lab_table": "红树实验台",
+  "block.cobblemon_paleontologist.cherry_lab_table": "樱花实验台",
+  "block.cobblemon_paleontologist.bamboo_lab_table": "竹子实验台",
+  "block.cobblemon_paleontologist.warped_lab_table": "扭曲实验台",
+  "block.cobblemon_paleontologist.crimson_lab_table": "深红实验台",
+  "block.cobblemon_paleontologist.apricorn_lab_table": "球果实验台",
+  "block.cobblemon_paleontologist.bone_end_block": "骨末方块",
+  "block.cobblemon_paleontologist.bone_block_stairs": "骨方块楼梯",
+  "block.cobblemon_paleontologist.bone_block_slab": "骨方块台阶",
+  "item.cobblemon_paleontologist.iron_chisel": "铁凿",
+  "item.cobblemon_paleontologist.diamond_chisel": "钻石凿",
+  "item.cobblemon_paleontologist.fossil_concretion": "化石结核",
+  "entity.minecraft.villager.cobblemon_paleontologist.cobblemon_paleontologist": "古生物学家",
+  "itemgroup.paleontology_item_group": "古生物学",
+  "container.paleontology_lab_table": "实验台"
+}

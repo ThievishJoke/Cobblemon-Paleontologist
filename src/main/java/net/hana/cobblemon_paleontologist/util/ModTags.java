@@ -1,6 +1,6 @@
 package net.hana.cobblemon_paleontologist.util;
 
-import net.hana.cobblemon_paleontologist.CobblmeonPaleontologist;
+import net.hana.cobblemon_paleontologist.CobblemonPaleontologist;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
@@ -10,19 +10,19 @@ import net.minecraft.world.level.block.Block;
 
 public class ModTags {
     public static class Blocks {
-        public static final TagKey<Block> NEEDS_BISMUTH_TOOL = createTag("needs_bismuth_tool");
-        public static final TagKey<Block> INCORRECT_FOR_BISMUTH_TOOL = createTag("incorrect_for_bismuth_tool");
+        public static final TagKey<Block> LAB_TABLES = createTag("lab_tables");
 
         private static TagKey<Block> createTag(String name) {
-            return BlockTags.create(ResourceLocation.fromNamespaceAndPath(CobblmeonPaleontologist.MOD_ID, name));
+            return BlockTags.create(ResourceLocation.fromNamespaceAndPath(CobblemonPaleontologist.MOD_ID, name));
         }
     }
 
     public static class Items {
-        public static final TagKey<Item> TRANSFORMABLE_ITEMS = createTag("transformable_items");
+        public static final TagKey<Item> CHISELS = createTag("chisels");
+        public static final TagKey<Item> CONCRETION_REWARDS = createTag("concretion_rewards");
 
         private static TagKey<Item> createTag(String name) {
-            return ItemTags.create(ResourceLocation.fromNamespaceAndPath(CobblmeonPaleontologist.MOD_ID, name));
+            return ItemTags.create(ResourceLocation.fromNamespaceAndPath(CobblemonPaleontologist.MOD_ID, name));
         }
     }
 }

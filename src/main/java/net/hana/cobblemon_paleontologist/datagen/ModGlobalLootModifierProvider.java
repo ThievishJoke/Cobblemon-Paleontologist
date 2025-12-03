@@ -1,6 +1,6 @@
 package net.hana.cobblemon_paleontologist.datagen;
 
-import net.hana.cobblemon_paleontologist.CobblmeonPaleontologist;
+import net.hana.cobblemon_paleontologist.CobblemonPaleontologist;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.neoforged.neoforge.common.data.GlobalLootModifierProvider;
@@ -9,7 +9,7 @@ import java.util.concurrent.CompletableFuture;
 
 public class ModGlobalLootModifierProvider extends GlobalLootModifierProvider {
     public ModGlobalLootModifierProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
-        super(output, registries, CobblmeonPaleontologist.MOD_ID);
+        super(output, registries, CobblemonPaleontologist.MOD_ID);
     }
 
     @Override

@@ -2,7 +2,7 @@ package net.hana.cobblemon_paleontologist.event;
 
 import com.cobblemon.mod.common.CobblemonItems;
 import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
-import net.hana.cobblemon_paleontologist.CobblmeonPaleontologist;
+import net.hana.cobblemon_paleontologist.CobblemonPaleontologist;
 import net.hana.cobblemon_paleontologist.villager.ModVillagers;
 import net.minecraft.world.entity.npc.VillagerTrades;
 import net.minecraft.world.item.ItemStack;
@@ -15,7 +15,7 @@ import net.neoforged.neoforge.event.village.VillagerTradesEvent;
 
 import java.util.List;
 
-@EventBusSubscriber(modid = CobblmeonPaleontologist.MOD_ID, bus = EventBusSubscriber.Bus.GAME)
+@EventBusSubscriber(modid = CobblemonPaleontologist.MOD_ID, bus = EventBusSubscriber.Bus.GAME)
 public class ModEvents {
 
     @SubscribeEvent

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "cobblemon_paleontologist:spruce_lab_table"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "cobblemon_paleontologist:blocks/spruce_lab_table"
+}

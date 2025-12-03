@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "cobblemon_paleontologist:block/bone_block_slab"
+    },
+    "type=double": {
+      "model": "cobblemon_paleontologist:block/bone_end_block"
+    },
+    "type=top": {
+      "model": "cobblemon_paleontologist:block/bone_block_slab_top"
+    }
+  }
+}

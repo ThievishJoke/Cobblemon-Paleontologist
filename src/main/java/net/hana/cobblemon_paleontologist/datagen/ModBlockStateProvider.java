@@ -1,6 +1,6 @@
 package net.hana.cobblemon_paleontologist.datagen;
 
-import net.hana.cobblemon_paleontologist.CobblmeonPaleontologist;
+import net.hana.cobblemon_paleontologist.CobblemonPaleontologist;
 import net.minecraft.data.PackOutput;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
 import net.neoforged.neoforge.client.model.generators.ModelFile;
@@ -9,7 +9,7 @@ import net.neoforged.neoforge.registries.DeferredBlock;
 
 public class ModBlockStateProvider extends BlockStateProvider {
     public ModBlockStateProvider(PackOutput output, ExistingFileHelper exFileHelper) {
-        super(output, CobblmeonPaleontologist.MOD_ID, exFileHelper);
+        super(output, CobblemonPaleontologist.MOD_ID, exFileHelper);
     }
 
     @Override

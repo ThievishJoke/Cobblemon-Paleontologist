@@ -1,1 +1,4 @@
-// 1.21.1	2025-06-07T18:25:00.0772358	Tags for minecraft:block mod id cobblemon_paleontologist
+// 1.21.1	2025-12-03T13:00:42.1165474	Tags for minecraft:block mod id cobblemon_paleontologist
+58f8417ee8acc86d2515781d373d3e0a5a555cac data/cobblemon_paleontologist/tags/block/lab_tables.json
+58f8417ee8acc86d2515781d373d3e0a5a555cac data/minecraft/tags/block/mineable/axe.json
+58f8417ee8acc86d2515781d373d3e0a5a555cac data/minecraft/tags/block/mineable/pickaxe.json

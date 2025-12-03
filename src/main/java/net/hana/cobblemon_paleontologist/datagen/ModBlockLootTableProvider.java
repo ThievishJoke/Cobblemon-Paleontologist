@@ -17,6 +17,22 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
     @Override
     protected void generate() {
         dropSelf(ModBlocks.LAB_TABLE.get());
+        dropSelf(ModBlocks.SPRUCE_LAB_TABLE.get());
+        dropSelf(ModBlocks.BIRCH_LAB_TABLE.get());
+        dropSelf(ModBlocks.JUNGLE_LAB_TABLE.get());
+        dropSelf(ModBlocks.ACACIA_LAB_TABLE.get());
+        dropSelf(ModBlocks.DARK_OAK_LAB_TABLE.get());
+        dropSelf(ModBlocks.MANGROVE_LAB_TABLE.get());
+        dropSelf(ModBlocks.CHERRY_LAB_TABLE.get());
+        dropSelf(ModBlocks.BAMBOO_LAB_TABLE.get());
+        dropSelf(ModBlocks.WARPED_LAB_TABLE.get());
+        dropSelf(ModBlocks.CRIMSON_LAB_TABLE.get());
+        dropSelf(ModBlocks.APRICORN_LAB_TABLE.get());
+
+        dropSelf(ModBlocks.BONE_END_BLOCK.get());
+        add(ModBlocks.BONE_BLOCK_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.BONE_BLOCK_SLAB.get()));
+        dropSelf(ModBlocks.BONE_BLOCK_STAIRS.get());
     }
 
     @Override

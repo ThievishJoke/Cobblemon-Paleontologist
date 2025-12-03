@@ -1,6 +1,6 @@
 package net.hana.cobblemon_paleontologist.datagen;
 
-import net.hana.cobblemon_paleontologist.CobblmeonPaleontologist;
+import net.hana.cobblemon_paleontologist.CobblemonPaleontologist;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.RegistrySetBuilder;
 import net.minecraft.data.PackOutput;
@@ -14,6 +14,6 @@ public class ModDatapackProvider extends DatapackBuiltinEntriesProvider {
             ;
 
     public ModDatapackProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
-        super(output, registries, BUILDER, Set.of(CobblmeonPaleontologist.MOD_ID));
+        super(output, registries, BUILDER, Set.of(CobblemonPaleontologist.MOD_ID));
     }
 }

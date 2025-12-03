@@ -1,4 +1,23 @@
 {
   "block.cobblemon_paleontologist.lab_table": "Labtafel",
-  "entity.minecraft.villager.cobblemon_paleontologist.cobblemon_paleontologist": "Paleontoloog"
+  "block.cobblemon_paleontologist.spruce_lab_table": "Sparrenlabtafel",
+  "block.cobblemon_paleontologist.birch_lab_table": "Berkenlabtafel",
+  "block.cobblemon_paleontologist.jungle_lab_table": "Junglebos-labtafel",
+  "block.cobblemon_paleontologist.acacia_lab_table": "Acacialabtafel",
+  "block.cobblemon_paleontologist.dark_oak_lab_table": "Donkere Eikenlabtafel",
+  "block.cobblemon_paleontologist.mangrove_lab_table": "Mangrove-labtafel",
+  "block.cobblemon_paleontologist.cherry_lab_table": "Kersenlabtafel",
+  "block.cobblemon_paleontologist.bamboo_lab_table": "Bamboelabtafel",
+  "block.cobblemon_paleontologist.warped_lab_table": "Verwrongen labtafel",
+  "block.cobblemon_paleontologist.crimson_lab_table": "Karmozijn labtafel",
+  "block.cobblemon_paleontologist.apricorn_lab_table": "Abrikhorn labtafel",
+  "block.cobblemon_paleontologist.bone_end_block": "Bot uiteindeblok",
+  "block.cobblemon_paleontologist.bone_block_stairs": "Bot bloktrap",
+  "block.cobblemon_paleontologist.bone_block_slab": "Bot blokplaat",
+  "entity.minecraft.villager.cobblemon_paleontologist.cobblemon_paleontologist": "Paleontoloog",
+  "itemgroup.paleontology_item_group": "Paleontologie",
+  "item.cobblemon_paleontologist.iron_chisel": "IJzeren beitel",
+  "item.cobblemon_paleontologist.diamond_chisel": "Diamanten beitel",
+  "item.cobblemon_paleontologist.fossil_concretion": "Concretie",
+  "container.paleontology_lab_table": "Labtafel"
 }

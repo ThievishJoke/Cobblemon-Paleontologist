@@ -1,4 +1,23 @@
 {
   "block.cobblemon_paleontologist.lab_table": "ラボテーブル",
-  "entity.minecraft.villager.cobblemon_paleontologist.cobblemon_paleontologist": "古生物学者"
+  "block.cobblemon_paleontologist.spruce_lab_table": "スプルースラボテーブル",
+  "block.cobblemon_paleontologist.birch_lab_table": "バーチラボテーブル",
+  "block.cobblemon_paleontologist.jungle_lab_table": "ジャングルラボテーブル",
+  "block.cobblemon_paleontologist.acacia_lab_table": "アカシアラボテーブル",
+  "block.cobblemon_paleontologist.dark_oak_lab_table": "ダークオークラボテーブル",
+  "block.cobblemon_paleontologist.mangrove_lab_table": "マングローブラボテーブル",
+  "block.cobblemon_paleontologist.cherry_lab_table": "チェリーラボテーブル",
+  "block.cobblemon_paleontologist.bamboo_lab_table": "バンブーラボテーブル",
+  "block.cobblemon_paleontologist.warped_lab_table": "歪んだーラボテーブル",
+  "block.cobblemon_paleontologist.crimson_lab_table": "クリムゾーラボテーブル",
+  "block.cobblemon_paleontologist.apricorn_lab_table": "ぼんぐりのみーラボテーブル",
+  "block.cobblemon_paleontologist.bone_end_block": "骨エンドブロック",
+  "block.cobblemon_paleontologist.bone_block_stairs": "骨ブロック階段",
+  "block.cobblemon_paleontologist.bone_block_slab": "骨ブロックのハーフブロック",
+  "item.cobblemon_paleontologist.iron_chisel": "鉄ノミ",
+  "item.cobblemon_paleontologist.diamond_chisel": "ダイヤモンドノミ",
+  "item.cobblemon_paleontologist.fossil_concretion": "コンクリーション",
+  "entity.minecraft.villager.cobblemon_paleontologist.cobblemon_paleontologist": "古生物学者",
+  "itemgroup.paleontology_item_group": "古生物学",
+  "container.paleontology_lab_table": "実験テーブル"
 }

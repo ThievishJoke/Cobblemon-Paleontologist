@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "F": {
-      "tag": "minecraft:planks"
+      "item": "minecraft:oak_planks"
     },
     "S": {
       "item": "minecraft:deepslate"
