@@ -18,6 +18,10 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModItems.IRON_CHISEL, Models.GENERATED);
         itemModelGenerator.register(ModItems.DIAMOND_CHISEL, Models.GENERATED);
+        itemModelGenerator.register(ModItems.NETHERITE_CHISEL, Models.GENERATED);
+        itemModelGenerator.register(ModItems.IRON_BRUSH, Models.GENERATED);
+        itemModelGenerator.register(ModItems.DIAMOND_BRUSH, Models.GENERATED);
+        itemModelGenerator.register(ModItems.NETHERITE_BRUSH, Models.GENERATED);
         itemModelGenerator.register(ModItems.FOSSIL_CONCRETION, Models.GENERATED);
     }
 }

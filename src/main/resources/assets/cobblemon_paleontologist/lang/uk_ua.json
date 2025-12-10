@@ -18,6 +18,13 @@
   "itemgroup.paleontology_item_group": "Палеонтологія",
   "item.cobblemon_paleontologist.iron_chisel": "Залізне долото",
   "item.cobblemon_paleontologist.diamond_chisel": "Діамантове долото",
+  "item.cobblemon_paleontologist.netherite_chisel": "Незеритовий різець",
+  "item.cobblemon_paleontologist.iron_brush": "Залізний пензель",
+  "item.cobblemon_paleontologist.diamond_brush": "Діамантовий пензель",
+  "item.cobblemon_paleontologist.netherite_brush": "Незеритовий пензель",
   "item.cobblemon_paleontologist.fossil_concretion": "Конкреція",
-  "container.paleontology_lab_table": "Лабораторний стіл"
+  "container.paleontology_lab_table": "Лабораторний стіл",
+  "#cobblemon_paleontologist:brushes": "Пензлі",
+  "#cobblemon_paleontologist:chisels": "Долотa",
+  "#cobblemon_paleontologist:concretion_rewards": "Нагороди за конкреції"
 }

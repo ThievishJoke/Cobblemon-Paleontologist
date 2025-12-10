@@ -139,6 +139,30 @@ public class ModRecipeGen extends FabricRecipeProvider {
                 .input('D', Items.DIAMOND)
                 .criterion(hasItem(Items.DIAMOND), conditionsFromItem(Items.STICK))
                 .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.IRON_BRUSH)
+                .pattern("F")
+                .pattern("I")
+                .pattern("S")
+                .input('F', Items.FEATHER)
+                .input('I', Items.IRON_INGOT)
+                .input('S', Items.STICK)
+                .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.DIAMOND_BRUSH)
+                .pattern("F")
+                .pattern("D")
+                .pattern("S")
+                .input('F', Items.FEATHER)
+                .input('D', Items.DIAMOND)
+                .input('S', Items.STICK)
+                .criterion(hasItem(Items.DIAMOND), conditionsFromItem(Items.DIAMOND))
+                .offerTo(exporter);
+
+        offerNetheriteUpgradeRecipe(exporter, ModItems.DIAMOND_CHISEL, RecipeCategory.TOOLS, ModItems.NETHERITE_CHISEL);
+        offerNetheriteUpgradeRecipe(exporter, ModItems.DIAMOND_BRUSH, RecipeCategory.TOOLS, ModItems.NETHERITE_BRUSH);
+
         StonecuttingRecipeJsonBuilder.createStonecutting(Ingredient.ofItems(Blocks.BONE_BLOCK), RecipeCategory.BUILDING_BLOCKS, ModBlocks.BONE_BLOCK_SLAB, 2)
                 .criterion(hasItem(Blocks.BONE_BLOCK), conditionsFromItem(Items.BONE))
                 .offerTo(exporter);

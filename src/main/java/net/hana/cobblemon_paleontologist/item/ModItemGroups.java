@@ -6,6 +6,7 @@ import net.hana.cobblemon_paleontologist.block.ModBlocks;
 import net.minecraft.block.Blocks;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
@@ -35,6 +36,11 @@ public class ModItemGroups {
                         entries.add(ModItems.FOSSIL_CONCRETION);
                         entries.add(ModItems.IRON_CHISEL);
                         entries.add(ModItems.DIAMOND_CHISEL);
+                        entries.add(ModItems.NETHERITE_CHISEL);
+                        entries.add(Items.BRUSH);
+                        entries.add(ModItems.IRON_BRUSH);
+                        entries.add(ModItems.DIAMOND_BRUSH);
+                        entries.add(ModItems.NETHERITE_BRUSH);
                     }).build());
 
     public static void registerItemGroups() {

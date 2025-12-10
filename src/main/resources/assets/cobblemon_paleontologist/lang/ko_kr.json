@@ -16,8 +16,15 @@
   "block.cobblemon_paleontologist.bone_block_slab": "뼈 블록 석판",
   "item.cobblemon_paleontologist.iron_chisel": "철 끌",
   "item.cobblemon_paleontologist.diamond_chisel": "다이아몬드 끌",
+  "item.cobblemon_paleontologist.netherite_chisel": "네더라이트 끌",
+  "item.cobblemon_paleontologist.iron_brush": "철 브러시",
+  "item.cobblemon_paleontologist.diamond_brush": "다이아몬드 브러시",
+  "item.cobblemon_paleontologist.netherite_brush": "네더라이트 브러시",
   "item.cobblemon_paleontologist.fossil_concretion": "결핵",
   "entity.minecraft.villager.cobblemon_paleontologist": "고생물학자",
   "itemgroup.paleontology_item_group": "고생물학",
-  "container.paleontology_lab_table": "실험실 테이블"
+  "container.paleontology_lab_table": "실험실 테이블",
+  "#cobblemon_paleontologist:brushes": "브러시",
+  "#cobblemon_paleontologist:chisels": "끌",
+  "#cobblemon_paleontologist:concretion_rewards": "응고물 보상"
 }

@@ -18,6 +18,13 @@
   "itemgroup.paleontology_item_group": "פָּלֵאוֹנטוֹלוֹגִיָה",
   "item.cobblemon_paleontologist.iron_chisel": "אזמל ברזל",
   "item.cobblemon_paleontologist.diamond_chisel": "אזמל יהלום",
+  "item.cobblemon_paleontologist.netherite_chisel": "מפסלת נתרייט",
+  "item.cobblemon_paleontologist.iron_brush": "מברשת ברזל",
+  "item.cobblemon_paleontologist.diamond_brush": "מברשת יהלום",
+  "item.cobblemon_paleontologist.netherite_brush": "מברשת נתרייט",
   "item.cobblemon_paleontologist.fossil_concretion": "התמצקות",
-  "container.paleontology_lab_table": "שולחן מעבדה"
+  "container.paleontology_lab_table": "שולחן מעבדה",
+  "#cobblemon_paleontologist:brushes": "מברשות",
+  "#cobblemon_paleontologist:chisels": "אזמלים",
+  "#cobblemon_paleontologist:concretion_rewards": "פרסי גיבוש"
 }

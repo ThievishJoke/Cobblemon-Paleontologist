@@ -2,6 +2,7 @@ package net.hana.cobblemon_paleontologist.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.hana.cobblemon_paleontologist.CobblemonPaleontologist;
+import net.hana.cobblemon_paleontologist.item.custom.BetterBrushItem;
 import net.hana.cobblemon_paleontologist.item.custom.ChiselItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -14,6 +15,16 @@ public class ModItems {
             new ChiselItem(new Item.Settings().maxDamage(128)));
     public static final Item DIAMOND_CHISEL = registerItem("diamond_chisel",
             new ChiselItem(new Item.Settings().maxDamage(256)));
+    public static final Item NETHERITE_CHISEL = registerItem("netherite_chisel",
+            new ChiselItem(new Item.Settings().maxDamage(512)));
+
+    public static final Item IRON_BRUSH = registerItem("iron_brush",
+            new BetterBrushItem((new Item.Settings()).maxDamage(128), 8));
+    public static final Item DIAMOND_BRUSH = registerItem("diamond_brush",
+            new BetterBrushItem((new Item.Settings()).maxDamage(512), 6));
+    public static final Item NETHERITE_BRUSH = registerItem("netherite_brush",
+            new BetterBrushItem((new Item.Settings()).maxDamage(1024), 4));
+
     public static final Item FOSSIL_CONCRETION = registerItem("fossil_concretion",
             new Item(new Item.Settings()));
 

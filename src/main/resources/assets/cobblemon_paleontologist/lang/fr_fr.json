@@ -16,8 +16,15 @@
   "block.cobblemon_paleontologist.bone_block_slab": "Dalle en blocs d'os",
   "item.cobblemon_paleontologist.iron_chisel": "Ciseau en fer",
   "item.cobblemon_paleontologist.diamond_chisel": "Ciseau en diamant",
+  "item.cobblemon_paleontologist.netherite_chisel": "Ciseau en nétherite",
+  "item.cobblemon_paleontologist.iron_brush": "Brosse en fer",
+  "item.cobblemon_paleontologist.diamond_brush": "Brosse en diamant",
+  "item.cobblemon_paleontologist.netherite_brush": "Brosse en nétherite",
   "item.cobblemon_paleontologist.fossil_concretion": "Concrétion",
   "entity.minecraft.villager.cobblemon_paleontologist": "Paléontologue",
   "itemgroup.paleontology_item_group": "Paléontologie",
-  "container.paleontology_lab_table": "Table de laboratoire"
+  "container.paleontology_lab_table": "Table de laboratoire",
+  "#cobblemon_paleontologist:brushes": "Brosses",
+  "#cobblemon_paleontologist:chisels": "Ciseaux",
+  "#cobblemon_paleontologist:concretion_rewards": "Récompenses de concrétion"
 }

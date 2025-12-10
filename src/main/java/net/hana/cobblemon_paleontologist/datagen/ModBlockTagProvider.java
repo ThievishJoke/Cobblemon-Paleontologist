@@ -30,6 +30,10 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.WARPED_LAB_TABLE)
                 .add(ModBlocks.CRIMSON_LAB_TABLE)
                 .add(ModBlocks.APRICORN_LAB_TABLE)
+
+                .add(ModBlocks.BONE_END_BLOCK)
+                .add(ModBlocks.BONE_BLOCK_STAIRS)
+                .add(ModBlocks.BONE_BLOCK_SLAB)
                 ;
         getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
                 .add(ModBlocks.LAB_TABLE)
