@@ -33,6 +33,9 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.WARPED_LAB_TABLE.get())
                 .add(ModBlocks.CRIMSON_LAB_TABLE.get())
                 .add(ModBlocks.APRICORN_LAB_TABLE.get())
+                .add(ModBlocks.BONE_END_BLOCK.get())
+                .add(ModBlocks.BONE_BLOCK_STAIRS.get())
+                .add(ModBlocks.BONE_BLOCK_SLAB.get())
                 ;
         tag(BlockTags.MINEABLE_WITH_AXE)
                 .add(ModBlocks.LAB_TABLE.get())
