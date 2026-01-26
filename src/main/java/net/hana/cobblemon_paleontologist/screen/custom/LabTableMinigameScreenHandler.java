@@ -54,7 +54,7 @@ public class LabTableMinigameScreenHandler extends ScreenHandler {
         // Input slot (concretion)
         this.addSlot(new Slot(minigameInventory, 2, 80, 26) {
             @Override
-            public int getMaxItemCount() { return 1; }
+            public int getMaxItemCount() { return 64; }
             @Override
             public boolean canInsert(ItemStack stack) { return stack.isOf(ModItems.FOSSIL_CONCRETION); }
         });

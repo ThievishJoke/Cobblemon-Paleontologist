@@ -1,6 +1,7 @@
 package net.hana.cobblemon_paleontologist.datagen;
 
-import net.hana.cobblemon_paleontologist.CobblemonPaleontologist;
+import net.hana.cobblemon_paleontologist.villager.ModPOI;
+import net.hana.cobblemon_paleontologist.villager.ModVillagers;
 import net.minecraft.data.DataOutput;
 import net.minecraft.data.server.tag.TagProvider;
 import net.minecraft.registry.RegistryKeys;
@@ -19,7 +20,7 @@ public class ModPoiTagProvider extends TagProvider<PointOfInterestType> {
     @Override
     protected void configure(RegistryWrapper.WrapperLookup lookup) {
         this.getOrCreateTagBuilder(PointOfInterestTypeTags.ACQUIRABLE_JOB_SITE)
-                .add(CobblemonPaleontologist.LAB_POI_KEY);
+                .add(ModPOI.LAB_POI_KEY);
 
     }
 }

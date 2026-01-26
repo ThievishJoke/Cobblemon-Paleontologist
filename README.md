@@ -1,0 +1,1 @@
+[![Modrinth Downloads](https://img.shields.io/modrinth/dt/cobblemon-paleontology?logo=modrinth&label=Downloads&labelColor=15151e&color=00af5c&style=flat-square)](https://modrinth.com/modpack/cobblemon-paleontology)

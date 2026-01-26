@@ -15,6 +15,8 @@ import net.hana.cobblemon_paleontologist.network.payload.FossilMinigameResultPay
 import net.hana.cobblemon_paleontologist.poi.CPointOfInterestTypes;
 import net.hana.cobblemon_paleontologist.screen.ModScreenHandlers;
 import net.hana.cobblemon_paleontologist.screen.custom.LabTableMinigameScreenHandler;
+import net.hana.cobblemon_paleontologist.villager.ModTrades;
+import net.hana.cobblemon_paleontologist.villager.ModVillagers;
 import net.minecraft.block.BlockState;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
@@ -44,8 +46,8 @@ public class CobblemonPaleontologist implements ModInitializer {
         ModBlocks.registerModBlocks();
         ModItems.registerModItems();
         ModItemGroups.registerItemGroups();
-        registerVillagers();
-        registerCustomTrades();
+        ModVillagers.registerVillagers();
+        ModTrades.registerCustomTrades();
         ModLootModifiers.registerLootTableEvents();
         ModBlockEntities.registerBlockEntities();
         ModScreenHandlers.registerScreenHandlers();
@@ -64,216 +66,5 @@ public class CobblemonPaleontologist implements ModInitializer {
                         }
                     });
                 });
-    }
-
-    public static final RegistryKey<PointOfInterestType> LAB_POI_KEY = registerPoiKey("lab_poi");
-
-    public static final Set<BlockState> LAB_TABLE_STATES = ImmutableSet.<BlockState>builder()
-            .addAll(ModBlocks.LAB_TABLE.getStateManager().getStates())
-            .addAll(ModBlocks.SPRUCE_LAB_TABLE.getStateManager().getStates())
-            .addAll(ModBlocks.BIRCH_LAB_TABLE.getStateManager().getStates())
-            .addAll(ModBlocks.JUNGLE_LAB_TABLE.getStateManager().getStates())
-            .addAll(ModBlocks.ACACIA_LAB_TABLE.getStateManager().getStates())
-            .addAll(ModBlocks.DARK_OAK_LAB_TABLE.getStateManager().getStates())
-            .addAll(ModBlocks.MANGROVE_LAB_TABLE.getStateManager().getStates())
-            .addAll(ModBlocks.CHERRY_LAB_TABLE.getStateManager().getStates())
-            .addAll(ModBlocks.BAMBOO_LAB_TABLE.getStateManager().getStates())
-            .addAll(ModBlocks.WARPED_LAB_TABLE.getStateManager().getStates())
-            .addAll(ModBlocks.CRIMSON_LAB_TABLE.getStateManager().getStates())
-            .addAll(ModBlocks.APRICORN_LAB_TABLE.getStateManager().getStates())
-            .build();
-
-    public static final PointOfInterestType LAB_POI =
-            Registry.register(
-                    Registries.POINT_OF_INTEREST_TYPE,
-                    Identifier.of(CobblemonPaleontologist.MOD_ID, "lab_poi"),
-                    new PointOfInterestType(LAB_TABLE_STATES, 1, 1)
-            );
-
-    public static final VillagerProfession PALEONTOLOGIST =
-            Registry.register(
-                    Registries.VILLAGER_PROFESSION,
-                    Identifier.of(CobblemonPaleontologist.MOD_ID, "cobblemon_paleontologist"),
-                    new VillagerProfession(
-                            "cobblemon_paleontologist",
-                            entry -> entry.matchesKey(LAB_POI_KEY),
-                            entry -> entry.matchesKey(LAB_POI_KEY),
-                            ImmutableSet.of(),
-                            ImmutableSet.of(),
-                            SoundEvents.ENTITY_VILLAGER_WORK_LIBRARIAN
-                    )
-            );
-
-    private static RegistryKey<PointOfInterestType> registerPoiKey(String name) {
-        return RegistryKey.of(RegistryKeys.POINT_OF_INTEREST_TYPE, Identifier.of(CobblemonPaleontologist.MOD_ID, name));
-    }
-
-    public static void registerVillagers() {
-        CobblemonPaleontologist.LOGGER.info("Registering Villagers for " + CobblemonPaleontologist.MOD_ID);
-    }
-
-    private static void registerCustomTrades() {
-        TradeOfferHelper.registerVillagerOffers(PALEONTOLOGIST, 1, factories -> {
-            factories.add((entity, random) -> new TradeOffer(
-                    new TradedItem(Items.EMERALD, 14),
-                    new ItemStack(CobblemonItems.FOSSIL_ANALYZER), 3, 10, 0.04f
-            ));
-            factories.add((entity, random) -> new TradeOffer(
-                    new TradedItem(Items.EMERALD, 14),
-                    new ItemStack(CobblemonItems.RESTORATION_TANK), 3, 10, 0.04f
-            ));
-            factories.add((entity, random) -> new TradeOffer(
-                    new TradedItem(Items.EMERALD, 14),
-                    new ItemStack(CobblemonItems.MONITOR), 3, 10, 0.04f
-            ));
-            factories.add((entity, random) -> new TradeOffer(
-                    new TradedItem(CobblemonItems.REVIVAL_HERB, 12),
-                    new ItemStack(Items.EMERALD, 2), 32, 4, 0.04f
-            ));
-        });
-
-        TradeOfferHelper.registerVillagerOffers(PALEONTOLOGIST, 2, factories -> {
-            factories.add((entity, random) -> new TradeOffer(
-                    new TradedItem(Items.EMERALD, 4),
-                    new ItemStack(Items.BRUSH), 3, 6, 0.04f
-            ));
-            factories.add((entity, random) -> new TradeOffer(
-                    new TradedItem(Items.EMERALD, 6),
-                    new ItemStack(Items.IRON_SHOVEL), 3, 6, 0.04f
-            ));
-            factories.add((entity, random) -> new TradeOffer(
-                    new TradedItem(Items.EMERALD, 6),
-                    new ItemStack(Items.IRON_PICKAXE), 4, 6, 0.04f
-            ));
-        });
-
-        TradeOfferHelper.registerVillagerOffers(PALEONTOLOGIST, 3, factories -> {
-            factories.add((entity, random) -> new TradeOffer(
-                    new TradedItem(Items.EMERALD, 16),
-                    new ItemStack(CobblemonItems.FOSSILIZED_BIRD), 3, 10, 0.05f
-            ));
-            factories.add((entity, random) -> new TradeOffer(
-                    new TradedItem(Items.EMERALD, 16),
-                    new ItemStack(CobblemonItems.FOSSILIZED_DINO), 3, 10, 0.05f
-            ));
-            factories.add((entity, random) -> new TradeOffer(
-                    new TradedItem(Items.EMERALD, 16),
-                    new ItemStack(CobblemonItems.FOSSILIZED_DRAKE), 3, 10, 0.05f
-            ));
-            factories.add((entity, random) -> new TradeOffer(
-                    new TradedItem(Items.EMERALD, 16),
-                    new ItemStack(CobblemonItems.FOSSILIZED_FISH), 3, 10, 0.05f
-            ));
-        });
-
-        TradeOfferHelper.registerVillagerOffers(PALEONTOLOGIST, 4, factories -> {
-            factories.add((entity, random) -> new TradeOffer(
-                    new TradedItem(Items.EMERALD, 32),
-                    new ItemStack(CobblemonItems.ARMOR_FOSSIL), 3, 10, 0.05f
-            ));
-            factories.add((entity, random) -> new TradeOffer(
-                    new TradedItem(Items.EMERALD, 32),
-                    new ItemStack(CobblemonItems.CLAW_FOSSIL), 3, 10, 0.05f
-            ));
-            factories.add((entity, random) -> new TradeOffer(
-                    new TradedItem(Items.EMERALD, 32),
-                    new ItemStack(CobblemonItems.COVER_FOSSIL), 3, 10, 0.05f
-            ));
-            factories.add((entity, random) -> new TradeOffer(
-                    new TradedItem(Items.EMERALD, 32),
-                    new ItemStack(CobblemonItems.DOME_FOSSIL), 3, 10, 0.05f
-            ));
-            factories.add((entity, random) -> new TradeOffer(
-                    new TradedItem(Items.EMERALD, 32),
-                    new ItemStack(CobblemonItems.HELIX_FOSSIL), 3, 10, 0.05f
-            ));
-            factories.add((entity, random) -> new TradeOffer(
-                    new TradedItem(Items.EMERALD, 32),
-                    new ItemStack(CobblemonItems.JAW_FOSSIL), 3, 10, 0.05f
-            ));
-            factories.add((entity, random) -> new TradeOffer(
-                    new TradedItem(Items.EMERALD, 32),
-                    new ItemStack(CobblemonItems.OLD_AMBER_FOSSIL), 3, 10, 0.05f
-            ));
-            factories.add((entity, random) -> new TradeOffer(
-                    new TradedItem(Items.EMERALD, 32),
-                    new ItemStack(CobblemonItems.PLUME_FOSSIL), 3, 10, 0.05f
-            ));
-            factories.add((entity, random) -> new TradeOffer(
-                    new TradedItem(Items.EMERALD, 32),
-                    new ItemStack(CobblemonItems.ROOT_FOSSIL), 3, 10, 0.05f
-            ));
-            factories.add((entity, random) -> new TradeOffer(
-                    new TradedItem(Items.EMERALD, 32),
-                    new ItemStack(CobblemonItems.SAIL_FOSSIL), 3, 10, 0.05f
-            ));
-            factories.add((entity, random) -> new TradeOffer(
-                    new TradedItem(Items.EMERALD, 32),
-                    new ItemStack(CobblemonItems.SKULL_FOSSIL), 3, 10, 0.05f
-            ));
-        });
-
-        TradeOfferHelper.registerVillagerOffers(PALEONTOLOGIST, 5, factories -> {
-            factories.add((entity, random) -> new TradeOffer(
-                    new TradedItem(Items.EMERALD, 8),
-                    new ItemStack(CobblemonItems.FOSSILIZED_BIRD), 3, 10, 0.05f
-            ));
-            factories.add((entity, random) -> new TradeOffer(
-                    new TradedItem(Items.EMERALD, 8),
-                    new ItemStack(CobblemonItems.FOSSILIZED_DINO), 3, 10, 0.05f
-            ));
-            factories.add((entity, random) -> new TradeOffer(
-                    new TradedItem(Items.EMERALD, 8),
-                    new ItemStack(CobblemonItems.FOSSILIZED_DRAKE), 3, 10, 0.05f
-            ));
-            factories.add((entity, random) -> new TradeOffer(
-                    new TradedItem(Items.EMERALD, 8),
-                    new ItemStack(CobblemonItems.FOSSILIZED_FISH), 3, 10, 0.05f
-            ));
-            factories.add((entity, random) -> new TradeOffer(
-                    new TradedItem(Items.EMERALD, 24),
-                    new ItemStack(CobblemonItems.ARMOR_FOSSIL), 3, 20, 0.05f
-            ));
-            factories.add((entity, random) -> new TradeOffer(
-                    new TradedItem(Items.EMERALD, 24),
-                    new ItemStack(CobblemonItems.CLAW_FOSSIL), 3, 20, 0.05f
-            ));
-            factories.add((entity, random) -> new TradeOffer(
-                    new TradedItem(Items.EMERALD, 24),
-                    new ItemStack(CobblemonItems.COVER_FOSSIL), 3, 20, 0.05f
-            ));
-            factories.add((entity, random) -> new TradeOffer(
-                    new TradedItem(Items.EMERALD, 24),
-                    new ItemStack(CobblemonItems.DOME_FOSSIL), 3, 20, 0.05f
-            ));
-            factories.add((entity, random) -> new TradeOffer(
-                    new TradedItem(Items.EMERALD, 24),
-                    new ItemStack(CobblemonItems.HELIX_FOSSIL), 3, 20, 0.05f
-            ));
-            factories.add((entity, random) -> new TradeOffer(
-                    new TradedItem(Items.EMERALD, 24),
-                    new ItemStack(CobblemonItems.JAW_FOSSIL), 3, 20, 0.05f
-            ));
-            factories.add((entity, random) -> new TradeOffer(
-                    new TradedItem(Items.EMERALD, 24),
-                    new ItemStack(CobblemonItems.OLD_AMBER_FOSSIL), 3, 20, 0.05f
-            ));
-            factories.add((entity, random) -> new TradeOffer(
-                    new TradedItem(Items.EMERALD, 24),
-                    new ItemStack(CobblemonItems.PLUME_FOSSIL), 3, 20, 0.05f
-            ));
-            factories.add((entity, random) -> new TradeOffer(
-                    new TradedItem(Items.EMERALD, 24),
-                    new ItemStack(CobblemonItems.ROOT_FOSSIL), 3, 20, 0.05f
-            ));
-            factories.add((entity, random) -> new TradeOffer(
-                    new TradedItem(Items.EMERALD, 24),
-                    new ItemStack(CobblemonItems.SAIL_FOSSIL), 3, 20, 0.05f
-            ));
-            factories.add((entity, random) -> new TradeOffer(
-                    new TradedItem(Items.EMERALD, 24),
-                    new ItemStack(CobblemonItems.SKULL_FOSSIL), 3, 20, 0.05f
-            ));
-        });
     }
 }
