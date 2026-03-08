@@ -16,8 +16,15 @@
   "block.cobblemon_paleontologist.bone_block_slab": "Bone Block Slab",
   "item.cobblemon_paleontologist.iron_chisel": "Iron Chisel",
   "item.cobblemon_paleontologist.diamond_chisel": "Diamond Chisel",
+  "item.cobblemon_paleontologist.netherite_chisel": "Netherite Chisel",
+  "item.cobblemon_paleontologist.iron_brush": "Iron Brush",
+  "item.cobblemon_paleontologist.diamond_brush": "Diamond Brush",
+  "item.cobblemon_paleontologist.netherite_brush": "Netherite Brush",
   "item.cobblemon_paleontologist.fossil_concretion": "Concretion",
   "entity.minecraft.villager.cobblemon_paleontologist": "Palaeontologist",
   "itemgroup.paleontology_item_group": "Paleontology",
-  "container.paleontology_lab_table": "Lab Table"
+  "container.paleontology_lab_table": "Lab Table",
+  "#cobblemon_paleontologist:brushes": "Brushes",
+  "#cobblemon_paleontologist:chisels": "Chisels",
+  "#cobblemon_paleontologist:concretion_rewards": "Concretion Rewards"
 }

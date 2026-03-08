@@ -18,6 +18,13 @@
   "itemgroup.paleontology_item_group": "Paläontologie",
   "item.cobblemon_paleontologist.iron_chisel": "Eisenmeißel",
   "item.cobblemon_paleontologist.diamond_chisel": "Diamantmeißel",
+  "item.cobblemon_paleontologist.netherite_chisel": "Netheritmeißel",
+  "item.cobblemon_paleontologist.iron_brush": "Eisenpinsel",
+  "item.cobblemon_paleontologist.diamond_brush": "Diamantpinsel",
+  "item.cobblemon_paleontologist.netherite_brush": "Netheritpinsel",
   "item.cobblemon_paleontologist.fossil_concretion": "Konkretion",
-  "container.paleontology_lab_table": "Labortisch"
+  "container.paleontology_lab_table": "Labortisch",
+  "#cobblemon_paleontologist:brushes": "Bürsten",
+  "#cobblemon_paleontologist:chisels": "Meißel",
+  "#cobblemon_paleontologist:concretion_rewards": "Konkretion-Belohnungen"
 }

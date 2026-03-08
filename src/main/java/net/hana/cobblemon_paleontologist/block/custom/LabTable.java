@@ -129,7 +129,7 @@ public class LabTable extends BlockWithEntity implements BlockEntityProvider {
     }
 
     private boolean isBrush(ItemStack stack) {
-        return stack.isOf(Items.BRUSH);
+        return stack.isIn(ModTags.Items.BRUSHES);
     }
 
     private boolean isFossilConcretion(ItemStack stack) {

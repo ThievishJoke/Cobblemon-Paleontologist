@@ -1,4 +1,8 @@
-// 1.21.1	2025-12-01T22:34:07.9447589	Cobblemon Paleontologist/Model Definitions
+// 1.21.1	2025-12-09T21:27:01.8352071	Cobblemon Paleontologist/Model Definitions
 5b7dddc8b1f296dcd35a90de381a4b6d213888d6 assets\cobblemon_paleontologist\models\item\diamond_chisel.json
 8bae9d4c3af969ebc964c5925af80fe7b272b5ea assets\cobblemon_paleontologist\models\item\iron_chisel.json
+66bd6bc127bd85500052c17814ba44739f0f691c assets\cobblemon_paleontologist\models\item\netherite_brush.json
+cfd227c9044fe916e6d3abcdfee744d20f0096c7 assets\cobblemon_paleontologist\models\item\diamond_brush.json
 2cc3fd64be0944a01bd832cc1c08a560644aa09d assets\cobblemon_paleontologist\models\item\fossil_concretion.json
+11933f0da2e1f66e6164a14d619ce6e60893545f assets\cobblemon_paleontologist\models\item\iron_brush.json
+5dfeba7383c34decd9cb3f0d5c3a7782126916ed assets\cobblemon_paleontologist\models\item\netherite_chisel.json

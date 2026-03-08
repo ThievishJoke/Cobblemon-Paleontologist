@@ -16,8 +16,15 @@
   "block.cobblemon_paleontologist.bone_block_slab": "骨ブロックのハーフブロック",
   "item.cobblemon_paleontologist.iron_chisel": "鉄ノミ",
   "item.cobblemon_paleontologist.diamond_chisel": "ダイヤモンドノミ",
+  "item.cobblemon_paleontologist.netherite_chisel": "ネザライトのノミ",
+  "item.cobblemon_paleontologist.iron_brush": "鉄のブラシ",
+  "item.cobblemon_paleontologist.diamond_brush": "ダイヤモンドのブラシ",
+  "item.cobblemon_paleontologist.netherite_brush": "ネザライトのブラシ",
   "item.cobblemon_paleontologist.fossil_concretion": "コンクリーション",
   "entity.minecraft.villager.cobblemon_paleontologist": "古生物学者",
   "itemgroup.paleontology_item_group": "古生物学",
-  "container.paleontology_lab_table": "実験テーブル"
+  "container.paleontology_lab_table": "実験テーブル",
+  "#cobblemon_paleontologist:brushes": "ブラシ",
+  "#cobblemon_paleontologist:chisels": "ノミ",
+  "#cobblemon_paleontologist:concretion_rewards": "コンクリーション報酬"
 }

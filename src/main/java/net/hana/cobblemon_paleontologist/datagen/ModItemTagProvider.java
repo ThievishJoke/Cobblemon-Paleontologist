@@ -21,7 +21,14 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         getOrCreateTagBuilder(ModTags.Items.CHISELS)
                 .add(ModItems.IRON_CHISEL)
                 .add(ModItems.DIAMOND_CHISEL)
+                .add(ModItems.NETHERITE_CHISEL)
                 ;
+        getOrCreateTagBuilder(ModTags.Items.BRUSHES)
+                .add(Items.BRUSH)
+                .add(ModItems.IRON_BRUSH)
+                .add(ModItems.DIAMOND_BRUSH)
+                .add(ModItems.NETHERITE_BRUSH)
+        ;
         getOrCreateTagBuilder(ModTags.Items.CONCRETION_REWARDS)
                 .add(CobblemonItems.ARMOR_FOSSIL)
                 .add(CobblemonItems.FOSSILIZED_BIRD)

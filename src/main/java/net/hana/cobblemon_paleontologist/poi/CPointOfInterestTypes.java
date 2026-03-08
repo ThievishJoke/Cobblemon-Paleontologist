@@ -1,10 +1,10 @@
 package net.hana.cobblemon_paleontologist.poi;
 
-import com.google.common.collect.ImmutableList;
-import com.google.common.collect.ImmutableSet;
 import net.hana.cobblemon_paleontologist.CobblemonPaleontologist;
 import net.hana.cobblemon_paleontologist.block.ModBlocks;
 import net.hana.cobblemon_paleontologist.mixin.PoiTypesAccessor;
+import net.hana.cobblemon_paleontologist.villager.ModPOI;
+import net.hana.cobblemon_paleontologist.villager.ModVillagers;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.registry.Registries;
@@ -22,10 +22,10 @@ public class CPointOfInterestTypes {
                 PoiTypesAccessor.getPointOfInterestStatesToType();
 
         RegistryEntry<PointOfInterestType> labPoiEntry =
-                Registries.POINT_OF_INTEREST_TYPE.getEntry(CobblemonPaleontologist.LAB_POI_KEY).get();
+                Registries.POINT_OF_INTEREST_TYPE.getEntry(ModPOI.LAB_POI_KEY).get();
 
         PointOfInterestType labPoiType =
-                Registries.POINT_OF_INTEREST_TYPE.get(CobblemonPaleontologist.LAB_POI_KEY);
+                Registries.POINT_OF_INTEREST_TYPE.get(ModPOI.LAB_POI_KEY);
 
         List<BlockState> labStates = new ArrayList<>(labPoiType.blockStates());
 

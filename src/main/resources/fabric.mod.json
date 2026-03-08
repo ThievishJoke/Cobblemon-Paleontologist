@@ -3,21 +3,28 @@
   "id": "cobblemon_paleontologist",
   "version": "${version}",
   "name": "Cobblemon Paleontologist",
-  "description": "",
+  "description": "Adds a new Villager Profession and other features, for new methods of obtaining rare fossil Pokemon.",
   "authors": ["BaLLducked"],
-  "contact": {},
+  "contact": {
+    "homepage": "https://github.com/ThievishJoke/",
+    "sources": "https://github.com/ThievishJoke/Cobblemon-Paleontologist",
+    "issues": "https://github.com/ThievishJoke/Cobblemon-Paleontologist/issues"
+  },
   "license": "GPL-3.0",
   "icon": "assets/cobblemon_paleontologist/icon.png",
   "environment": "*",
   "entrypoints": {
-    "client": [
-      "net.hana.cobblemon_paleontologist.client.CobblemonPaleontologistClient"
-    ],
     "main": [
       "net.hana.cobblemon_paleontologist.CobblemonPaleontologist"
     ],
+    "client": [
+      "net.hana.cobblemon_paleontologist.client.CobblemonPaleontologistClient"
+    ],
     "fabric-datagen": [
       "net.hana.cobblemon_paleontologist.CobblemonPaleontologistDatagen"
+    ],
+    "jei_mod_plugin": [
+      "net.hana.cobblemon_paleontologist.integration.jei.PaleontologistJeiPlugin"
     ]
   },
   "mixins": [
@@ -25,8 +32,17 @@
   ],
   "depends": {
     "fabricloader": ">=${loader_version}",
-    "fabric": "*",
+    "fabric-api": "*",
     "minecraft": "${minecraft_version}",
-    "cobblemon": "${cobblemon_version}"
+    "cobblemon": "${cobblemon_version}",
+    "java": ">=21"
+  },
+  "custom": {
+    "modmenu": {
+      "links": {
+        "modmenu.modrinth": "https://modrinth.com/mod/cobblemon-paleontology",
+        "modmenu.discord": "https://discord.gg/yW2zQJp4bM"
+      }
+    }
   }
 }

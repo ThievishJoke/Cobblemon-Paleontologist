@@ -18,6 +18,13 @@
   "itemgroup.paleontology_item_group": "Палеонтология",
   "item.cobblemon_paleontologist.iron_chisel": "Железное долото",
   "item.cobblemon_paleontologist.diamond_chisel": "Алмазное долото",
+  "item.cobblemon_paleontologist.netherite_chisel": "Незеритовое долото",
+  "item.cobblemon_paleontologist.iron_brush": "Железная кисть",
+  "item.cobblemon_paleontologist.diamond_brush": "Алмазная кисть",
+  "item.cobblemon_paleontologist.netherite_brush": "Незеритовая кисть",
   "item.cobblemon_paleontologist.fossil_concretion": "Конкреция",
-  "container.paleontology_lab_table": "Лабораторный стол"
+  "container.paleontology_lab_table": "Лабораторный стол",
+  "#cobblemon_paleontologist:brushes": "Кисти",
+  "#cobblemon_paleontologist:chisels": "Долота",
+  "#cobblemon_paleontologist:concretion_rewards": "Награды за конкреции"
 }

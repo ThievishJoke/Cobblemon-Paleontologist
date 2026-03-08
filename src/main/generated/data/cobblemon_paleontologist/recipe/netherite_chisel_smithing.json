@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "minecraft:netherite_ingot"
+  },
+  "base": {
+    "item": "cobblemon_paleontologist:diamond_chisel"
+  },
+  "result": {
+    "count": 1,
+    "id": "cobblemon_paleontologist:netherite_chisel"
+  },
+  "template": {
+    "item": "minecraft:netherite_upgrade_smithing_template"
+  }
+}

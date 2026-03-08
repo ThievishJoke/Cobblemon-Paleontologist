@@ -18,6 +18,13 @@
   "itemgroup.paleontology_item_group": "Paleontologie",
   "item.cobblemon_paleontologist.iron_chisel": "IJzeren beitel",
   "item.cobblemon_paleontologist.diamond_chisel": "Diamanten beitel",
+  "item.cobblemon_paleontologist.netherite_chisel": "Netherrietbeitel",
+  "item.cobblemon_paleontologist.iron_brush": "IJzeren borstel",
+  "item.cobblemon_paleontologist.diamond_brush": "Diamanten borstel",
+  "item.cobblemon_paleontologist.netherite_brush": "Netherrietborstel",
   "item.cobblemon_paleontologist.fossil_concretion": "Concretie",
-  "container.paleontology_lab_table": "Labtafel"
+  "container.paleontology_lab_table": "Labtafel",
+  "#cobblemon_paleontologist:brushes": "Kwasten",
+  "#cobblemon_paleontologist:chisels": "Beitels",
+  "#cobblemon_paleontologist:concretion_rewards": "Concretiebeloningen"
 }

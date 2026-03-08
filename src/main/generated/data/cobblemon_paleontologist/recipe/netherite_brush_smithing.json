@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "minecraft:netherite_ingot"
+  },
+  "base": {
+    "item": "cobblemon_paleontologist:diamond_brush"
+  },
+  "result": {
+    "count": 1,
+    "id": "cobblemon_paleontologist:netherite_brush"
+  },
+  "template": {
+    "item": "minecraft:netherite_upgrade_smithing_template"
+  }
+}
