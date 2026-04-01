@@ -139,7 +139,6 @@ public class ModRecipeGen extends FabricRecipeProvider {
                 .input('D', Items.DIAMOND)
                 .criterion(hasItem(Items.DIAMOND), conditionsFromItem(Items.STICK))
                 .offerTo(exporter);
-
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.IRON_BRUSH)
                 .pattern("F")
                 .pattern("I")

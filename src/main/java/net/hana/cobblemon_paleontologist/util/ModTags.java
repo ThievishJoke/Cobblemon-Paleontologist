@@ -17,7 +17,7 @@ public class ModTags {
     }
 
     public static class Items {
-        public static final TagKey<Item> BRUSHES = createTag("brushes");
+        public static final TagKey<Item> BRUSHES = TagKey.of(RegistryKeys.ITEM, Identifier.of("c", "tools/brushes"));
         public static final TagKey<Item> CHISELS = createTag("chisels");
         public static final TagKey<Item> CONCRETION_REWARDS = createTag("concretion_rewards");
 

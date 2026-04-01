@@ -13,7 +13,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 plugins {
     id 'fabric-loom' version '1.10-SNAPSHOT'
     id 'maven-publish'
-    id 'org.jetbrains.kotlin.jvm' version '2.2.0'
+    id 'org.jetbrains.kotlin.jvm' version '2.3.10'
 }
 
 version = project.mod_version
@@ -34,10 +34,10 @@ repositories {
         name = "Terraformers"
         url = "https://maven.terraformersmc.com/"
     }
-    maven {
-        name = "ModMaven"
-        url = "https://modmaven.dev"
-    }
+    //maven {
+    //    name = "ModMaven"
+    //    url = "https://modmaven.dev"
+    //}
     maven {
         name = "Modrinth"
         url = "https://api.modrinth.com/maven"
@@ -55,7 +55,7 @@ dependencies {
     modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
-    modCompileOnly "mezz.jei:jei-${project.minecraft_version}-fabric-api:${project.jei_version}"
+    //modCompileOnly "mezz.jei:jei-${project.minecraft_version}-fabric-api:${project.jei_version}"
 
     // Kotlin
     modImplementation "net.fabricmc:fabric-language-kotlin:${project.fabric_kotlin_version}"
@@ -78,6 +78,10 @@ processResources {
                 "cobblemon_version": project.cobblemon_version
     }
 }
+
+//loom {
+//    accessWidenerPath = file("src/main/resources/cobblemon-paleontologist.accesswidener")
+//}
 
 tasks.withType(JavaCompile).configureEach {
     it.options.encoding = "UTF-8"

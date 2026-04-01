@@ -28,7 +28,7 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.IRON_BRUSH)
                 .add(ModItems.DIAMOND_BRUSH)
                 .add(ModItems.NETHERITE_BRUSH)
-        ;
+                ;
         getOrCreateTagBuilder(ModTags.Items.CONCRETION_REWARDS)
                 .add(CobblemonItems.ARMOR_FOSSIL)
                 .add(CobblemonItems.FOSSILIZED_BIRD)
