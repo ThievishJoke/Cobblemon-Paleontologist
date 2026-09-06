@@ -27,12 +27,12 @@ base {
 repositories {
     mavenCentral()
     maven {
-        name = "Cobblemon"
+        name = "Impact"
         url = "https://maven.impactdev.net/repository/development/"
     }
     maven {
         name = "Terraformers"
-        url = "https://maven.terraformersmc.com/"
+        url = "https://maven.terraformersmc.com"
     }
     maven {
         name = "ModMaven"
