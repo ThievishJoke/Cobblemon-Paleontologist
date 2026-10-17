@@ -15,9 +15,9 @@ public class CobblemonPaleontologistDatagen implements DataGeneratorEntrypoint {
         pack.addProvider(ModBlockTagProvider::new);
         pack.addProvider(ModItemTagProvider::new);
         pack.addProvider(ModLootTableGen::new);
+        pack.addProvider(ModModelProvider::new);
         pack.addProvider(ModRecipeGen::new);
         pack.addProvider(ModPoiTagProvider::new);
-        pack.addProvider(ModModelProvider::new);
         //pack.addProvider(ModWorldGenerator::new);
     }
 

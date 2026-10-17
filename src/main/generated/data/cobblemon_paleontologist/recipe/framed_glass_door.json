@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "I": {
+      "item": "cobblemon_paleontologist:framed_glass"
+    }
+  },
+  "pattern": [
+    "II ",
+    "II ",
+    "II "
+  ],
+  "result": {
+    "count": 1,
+    "id": "cobblemon_paleontologist:framed_glass_door"
+  }
+}

@@ -14,6 +14,9 @@
     "cobblemon_paleontologist:apricorn_lab_table",
     "cobblemon_paleontologist:bone_end_block",
     "cobblemon_paleontologist:bone_block_stairs",
-    "cobblemon_paleontologist:bone_block_slab"
+    "cobblemon_paleontologist:bone_block_slab",
+    "cobblemon_paleontologist:framed_glass",
+    "cobblemon_paleontologist:framed_glass_pane",
+    "cobblemon_paleontologist:framed_glass_door"
   ]
 }

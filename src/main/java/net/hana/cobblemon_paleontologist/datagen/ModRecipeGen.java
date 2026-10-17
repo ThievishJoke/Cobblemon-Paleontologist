@@ -168,5 +168,30 @@ public class ModRecipeGen extends FabricRecipeProvider {
                 .offerTo(exporter);
         VanillaRecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.BONE_BLOCK_STAIRS, Blocks.BONE_BLOCK);
         VanillaRecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.BONE_END_BLOCK, Blocks.BONE_BLOCK);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.FRAMED_GLASS)
+                .pattern("III")
+                .pattern("IGI")
+                .pattern("III")
+                .input('I', Items.IRON_NUGGET)
+                .input('G', Items.GLASS)
+                .criterion(hasItem(Items.GLASS), conditionsFromItem(Items.GLASS))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModBlocks.FRAMED_GLASS_PANE)
+                .pattern("   ")
+                .pattern("III")
+                .pattern("III")
+                .input('I', ModBlocks.FRAMED_GLASS)
+                .criterion(hasItem(Items.GLASS), conditionsFromItem(Items.GLASS))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModBlocks.FRAMED_GLASS_DOOR)
+                .pattern("II ")
+                .pattern("II ")
+                .pattern("II ")
+                .input('I', ModBlocks.FRAMED_GLASS)
+                .criterion(hasItem(Items.GLASS), conditionsFromItem(Items.GLASS))
+                .offerTo(exporter);
     }
 }

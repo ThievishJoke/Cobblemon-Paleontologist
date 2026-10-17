@@ -14,6 +14,9 @@
   "block.cobblemon_paleontologist.bone_end_block": "骨エンドブロック",
   "block.cobblemon_paleontologist.bone_block_stairs": "骨ブロック階段",
   "block.cobblemon_paleontologist.bone_block_slab": "骨ブロックのハーフブロック",
+  "block.cobblemon_paleontologist.framed_glass": "額縁付きガラス",
+  "block.cobblemon_paleontologist.framed_glass_pane": "額縁付きガラスパネル",
+  "block.cobblemon_paleontologist.framed_glass_door": "額縁付きガラスドア",
   "item.cobblemon_paleontologist.iron_chisel": "鉄ノミ",
   "item.cobblemon_paleontologist.diamond_chisel": "ダイヤモンドノミ",
   "item.cobblemon_paleontologist.netherite_chisel": "ネザライトのノミ",
@@ -21,10 +24,10 @@
   "item.cobblemon_paleontologist.diamond_brush": "ダイヤモンドのブラシ",
   "item.cobblemon_paleontologist.netherite_brush": "ネザライトのブラシ",
   "item.cobblemon_paleontologist.fossil_concretion": "コンクリーション",
-  "entity.minecraft.villager.cobblemon_paleontologist": "古生物学者",
   "itemgroup.paleontology_item_group": "古生物学",
   "container.paleontology_lab_table": "実験テーブル",
   "#cobblemon_paleontologist:brushes": "ブラシ",
   "#cobblemon_paleontologist:chisels": "ノミ",
-  "#cobblemon_paleontologist:concretion_rewards": "コンクリーション報酬"
+  "#cobblemon_paleontologist:concretion_rewards": "コンクリーション報酬",
+  "entity.minecraft.villager.cobblemon_paleontologist": "古生物学者"
 }

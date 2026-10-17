@@ -34,6 +34,10 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.BONE_END_BLOCK)
                 .add(ModBlocks.BONE_BLOCK_STAIRS)
                 .add(ModBlocks.BONE_BLOCK_SLAB)
+
+                .add(ModBlocks.FRAMED_GLASS)
+                .add(ModBlocks.FRAMED_GLASS_PANE)
+                .add(ModBlocks.FRAMED_GLASS_DOOR)
                 ;
         getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
                 .add(ModBlocks.LAB_TABLE)
@@ -62,6 +66,9 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.WARPED_LAB_TABLE)
                 .add(ModBlocks.CRIMSON_LAB_TABLE)
                 .add(ModBlocks.APRICORN_LAB_TABLE)
+        ;
+        getOrCreateTagBuilder(BlockTags.DOORS)
+                .add(ModBlocks.FRAMED_GLASS_DOOR)
         ;
     }
 }

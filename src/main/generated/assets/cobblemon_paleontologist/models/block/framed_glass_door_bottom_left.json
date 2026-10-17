@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_bottom_left",
+  "textures": {
+    "bottom": "cobblemon_paleontologist:block/framed_glass_door_bottom",
+    "top": "cobblemon_paleontologist:block/framed_glass_door_top"
+  }
+}

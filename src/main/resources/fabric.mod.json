@@ -3,7 +3,7 @@
   "id": "cobblemon_paleontologist",
   "version": "${version}",
   "name": "Cobblemon Paleontologist",
-  "description": "Adds a new Villager Profession and other features, for new methods of obtaining rare fossil Pokemon.",
+  "description": "Adds a new Villager Profession and other features, for new methods of obtaining fossil Pokemon.",
   "authors": ["BaLLducked"],
   "contact": {
     "homepage": "https://github.com/ThievishJoke/",
@@ -34,7 +34,7 @@
     "fabricloader": ">=${loader_version}",
     "fabric-api": "*",
     "minecraft": "${minecraft_version}",
-    "cobblemon": "${cobblemon_version}",
+    "cobblemon": ">=${cobblemon_version}",
     "java": ">=21"
   },
   "custom": {

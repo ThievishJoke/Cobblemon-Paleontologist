@@ -14,7 +14,9 @@
   "block.cobblemon_paleontologist.bone_end_block": "בלוק סוף עצם",
   "block.cobblemon_paleontologist.bone_block_stairs": "בלוק מדרגות עצם",
   "block.cobblemon_paleontologist.bone_block_slab": "לוחית עצם",
-  "entity.minecraft.villager.cobblemon_paleontologist": "פלאונטולוג",
+  "block.cobblemon_paleontologist.framed_glass": "זכוכית ממוסגרת",
+  "block.cobblemon_paleontologist.framed_glass_pane": "חלונית זכוכית ממוסגרת",
+  "block.cobblemon_paleontologist.framed_glass_door": "דלת זכוכית ממוסגרת",
   "itemgroup.paleontology_item_group": "פָּלֵאוֹנטוֹלוֹגִיָה",
   "item.cobblemon_paleontologist.iron_chisel": "אזמל ברזל",
   "item.cobblemon_paleontologist.diamond_chisel": "אזמל יהלום",
@@ -26,5 +28,6 @@
   "container.paleontology_lab_table": "שולחן מעבדה",
   "#cobblemon_paleontologist:brushes": "מברשות",
   "#cobblemon_paleontologist:chisels": "אזמלים",
-  "#cobblemon_paleontologist:concretion_rewards": "פרסי גיבוש"
+  "#cobblemon_paleontologist:concretion_rewards": "פרסי גיבוש",
+  "entity.minecraft.villager.cobblemon_paleontologist": "פלאונטולוג"
 }

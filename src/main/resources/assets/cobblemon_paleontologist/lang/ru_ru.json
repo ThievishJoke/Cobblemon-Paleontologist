@@ -14,8 +14,9 @@
   "block.cobblemon_paleontologist.bone_end_block": "Концевой костяной блок",
   "block.cobblemon_paleontologist.bone_block_stairs": "Костяная блок-лестница",
   "block.cobblemon_paleontologist.bone_block_slab": "Костяная блок-плита",
-  "entity.minecraft.villager.cobblemon_paleontologist": "Палеонтолог",
-  "itemgroup.paleontology_item_group": "Палеонтология",
+  "block.cobblemon_paleontologist.framed_glass": "Стеклянная рама",
+  "block.cobblemon_paleontologist.framed_glass_pane": "Стеклянная панель в раме",
+  "block.cobblemon_paleontologist.framed_glass_door": "Дверь со стеклянной рамой",
   "item.cobblemon_paleontologist.iron_chisel": "Железное долото",
   "item.cobblemon_paleontologist.diamond_chisel": "Алмазное долото",
   "item.cobblemon_paleontologist.netherite_chisel": "Незеритовое долото",
@@ -23,8 +24,10 @@
   "item.cobblemon_paleontologist.diamond_brush": "Алмазная кисть",
   "item.cobblemon_paleontologist.netherite_brush": "Незеритовая кисть",
   "item.cobblemon_paleontologist.fossil_concretion": "Конкреция",
+  "itemgroup.paleontology_item_group": "Палеонтология",
   "container.paleontology_lab_table": "Лабораторный стол",
   "#cobblemon_paleontologist:brushes": "Кисти",
   "#cobblemon_paleontologist:chisels": "Долота",
-  "#cobblemon_paleontologist:concretion_rewards": "Награды за конкреции"
+  "#cobblemon_paleontologist:concretion_rewards": "Награды за конкреции",
+  "entity.minecraft.villager.cobblemon_paleontologist": "Палеонтолог"
 }

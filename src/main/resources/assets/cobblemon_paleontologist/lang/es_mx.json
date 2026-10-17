@@ -14,6 +14,9 @@
   "block.cobblemon_paleontologist.bone_end_block": "Bloque de Hueso del End",
   "block.cobblemon_paleontologist.bone_block_stairs": "Escaleras de Bloque de Hueso",
   "block.cobblemon_paleontologist.bone_block_slab": "Losa de Bloque de Hueso",
+  "block.cobblemon_paleontologist.framed_glass": "Cristal enmarcado",
+  "block.cobblemon_paleontologist.framed_glass_pane": "Panel de cristal enmarcado",
+  "block.cobblemon_paleontologist.framed_glass_door": "Puerta de cristal enmarcada",
   "item.cobblemon_paleontologist.iron_chisel": "Cincel de Hierro",
   "item.cobblemon_paleontologist.diamond_chisel": "Cincel de Diamante",
   "item.cobblemon_paleontologist.netherite_chisel": "Cincel de Netherita",
@@ -21,10 +24,10 @@
   "item.cobblemon_paleontologist.diamond_brush": "Brocha de Diamante",
   "item.cobblemon_paleontologist.netherite_brush": "Brocha de Netherita",
   "item.cobblemon_paleontologist.fossil_concretion": "Concreción",
-  "entity.minecraft.villager.cobblemon_paleontologist": "Paleontólogo",
   "itemgroup.paleontology_item_group": "Paleontología",
   "container.paleontology_lab_table": "Mesa de Laboratorio",
   "#cobblemon_paleontologist:brushes": "Brochas",
   "#cobblemon_paleontologist:chisels": "Cinceles",
-  "#cobblemon_paleontologist:concretion_rewards": "Recompensas de Concreción"
+  "#cobblemon_paleontologist:concretion_rewards": "Recompensas de Concreción",
+  "entity.minecraft.villager.cobblemon_paleontologist": "Paleontólogo"
 }

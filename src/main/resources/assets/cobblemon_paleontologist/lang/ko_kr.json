@@ -14,6 +14,9 @@
   "block.cobblemon_paleontologist.bone_end_block": "뼈 끝 블록",
   "block.cobblemon_paleontologist.bone_block_stairs": "뼈 블록 계단",
   "block.cobblemon_paleontologist.bone_block_slab": "뼈 블록 석판",
+  "block.cobblemon_paleontologist.framed_glass": "액자 유리",
+  "block.cobblemon_paleontologist.framed_glass_pane": "액자 유리 패널",
+  "block.cobblemon_paleontologist.framed_glass_door": "액자 유리 문",
   "item.cobblemon_paleontologist.iron_chisel": "철 끌",
   "item.cobblemon_paleontologist.diamond_chisel": "다이아몬드 끌",
   "item.cobblemon_paleontologist.netherite_chisel": "네더라이트 끌",
@@ -21,10 +24,10 @@
   "item.cobblemon_paleontologist.diamond_brush": "다이아몬드 브러시",
   "item.cobblemon_paleontologist.netherite_brush": "네더라이트 브러시",
   "item.cobblemon_paleontologist.fossil_concretion": "결핵",
-  "entity.minecraft.villager.cobblemon_paleontologist": "고생물학자",
   "itemgroup.paleontology_item_group": "고생물학",
   "container.paleontology_lab_table": "실험실 테이블",
   "#cobblemon_paleontologist:brushes": "브러시",
   "#cobblemon_paleontologist:chisels": "끌",
-  "#cobblemon_paleontologist:concretion_rewards": "응고물 보상"
+  "#cobblemon_paleontologist:concretion_rewards": "응고물 보상",
+  "entity.minecraft.villager.cobblemon_paleontologist": "고생물학자"
 }

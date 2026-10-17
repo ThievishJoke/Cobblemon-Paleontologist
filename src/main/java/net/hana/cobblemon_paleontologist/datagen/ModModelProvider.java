@@ -2,6 +2,7 @@ package net.hana.cobblemon_paleontologist.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
+import net.hana.cobblemon_paleontologist.block.ModBlocks;
 import net.hana.cobblemon_paleontologist.item.ModItems;
 import net.minecraft.data.client.*;
 
@@ -12,6 +13,8 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
+        blockStateModelGenerator.registerGlassPane(ModBlocks.FRAMED_GLASS, ModBlocks.FRAMED_GLASS_PANE);
+        blockStateModelGenerator.registerDoor(ModBlocks.FRAMED_GLASS_DOOR);
     }
 
     @Override

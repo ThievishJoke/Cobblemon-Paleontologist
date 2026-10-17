@@ -41,6 +41,9 @@ public class ModItemGroups {
                         entries.add(ModItems.IRON_BRUSH);
                         entries.add(ModItems.DIAMOND_BRUSH);
                         entries.add(ModItems.NETHERITE_BRUSH);
+                        entries.add(ModBlocks.FRAMED_GLASS);
+                        entries.add(ModBlocks.FRAMED_GLASS_PANE);
+                        entries.add(ModBlocks.FRAMED_GLASS_DOOR);
                     }).build());
 
     public static void registerItemGroups() {

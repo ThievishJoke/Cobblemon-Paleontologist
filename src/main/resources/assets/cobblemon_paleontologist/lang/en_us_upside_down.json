@@ -14,6 +14,9 @@
   "block.cobblemon_paleontologist.bone_end_block": "ʞɔoꞁq puǝ ǝuoq",
   "block.cobblemon_paleontologist.bone_block_stairs": "sɹᴉɐʇs ʞɔoꞁq ǝuoq",
   "block.cobblemon_paleontologist.bone_block_slab": "qɐꞁs ʞɔoꞁq ǝuoq",
+  "block.cobblemon_paleontologist.framed_glass": "ssɐl⅁ pǝɯɐɹℲ",
+  "block.cobblemon_paleontologist.framed_glass_pane": "ǝuɐԀ ssɐl⅁ pǝɯɐɹℲ",
+  "block.cobblemon_paleontologist.framed_glass_door": "ɹooᗡ ssɐl⅁ pǝɯɐɹℲ",
   "item.cobblemon_paleontologist.iron_chisel": "ꞁǝsᴉɥɔ uoɹᴉ",
   "item.cobblemon_paleontologist.diamond_chisel": "ꞁǝsᴉɥɔ pouɐɯᴉp",
   "item.cobblemon_paleontologist.netherite_chisel": "ꞁǝsᴉɥɔ ǝʇᴉɹǝɥʇǝu",
@@ -21,10 +24,10 @@
   "item.cobblemon_paleontologist.diamond_brush": "ɥsɹnq pouɐɯᴉp",
   "item.cobblemon_paleontologist.netherite_brush": "ɥsɹnq ǝʇᴉɹǝɥʇǝu",
   "item.cobblemon_paleontologist.fossil_concretion": "uoᴉʇɔǝɹɔuoɔ ꞁᴉssou",
-  "entity.minecraft.villager.cobblemon_paleontologist": "ʇsᴉƃoloʇuoǝꞁɐd",
   "itemgroup.paleontology_item_group": "ʎƃoꞁoʇouoʇuɐꞁɐd",
   "container.paleontology_lab_table": "ǝlqɐ⊥ qɐ⅂",
   "#cobblemon_paleontologist:brushes": "sǝɥsnuɹq",
   "#cobblemon_paleontologist:chisels": "sꞁǝsᴉɥɔ",
-  "#cobblemon_paleontologist:concretion_rewards": "spɹɐʍǝɹ uoᴉʇɔǝɹɔuoɔ"
+  "#cobblemon_paleontologist:concretion_rewards": "spɹɐʍǝɹ uoᴉʇɔǝɹɔuoɔ",
+  "entity.minecraft.villager.cobblemon_paleontologist": "ʇsᴉƃoloʇuoǝꞁɐd"
 }

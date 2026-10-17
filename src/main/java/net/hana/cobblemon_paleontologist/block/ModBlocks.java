@@ -5,12 +5,21 @@ import net.hana.cobblemon_paleontologist.block.custom.LabTable;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
+import net.minecraft.item.Items;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 
 public class ModBlocks {
+    public static final Block FRAMED_GLASS = registerBlock("framed_glass",
+            new Block(AbstractBlock.Settings.copy(Blocks.GLASS)));
+    public static final Block FRAMED_GLASS_PANE = registerBlock("framed_glass_pane",
+            new PaneBlock(AbstractBlock.Settings.copy(Blocks.GLASS_PANE)));
+    //public static final Block FRAMED_GLASS_DOOR = registerBlock("framed_glass_door",
+    //        new StainedGlassBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(Blocks.ACACIA_DOOR).sounds(BlockSoundGroup.GLASS)));
+    public static final Block FRAMED_GLASS_DOOR = registerBlock("framed_glass_door",
+            new DoorBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(Blocks.ACACIA_DOOR).sounds(BlockSoundGroup.GLASS)));
     public static final Block LAB_TABLE = registerBlock("lab_table",
             new LabTable(AbstractBlock.Settings.create().sounds(BlockSoundGroup.STONE).strength(1.0f).nonOpaque()) {
             });
@@ -66,7 +75,18 @@ public class ModBlocks {
     }
 
     public static void registerModBlocks() {
-        CobblemonPaleontologist.LOGGER.info("Registering ModBlocks for " + CobblemonPaleontologist.MOD_ID);
-    }
+        CobblemonPaleontologist.LOGGER.info(
+                "Registering ModBlocks for " + CobblemonPaleontologist.MOD_ID
+        );
 
+        //CobblemonPaleontologist.LOGGER.info(
+        //        "Framed pane class: {}",
+        //        ModBlocks.FRAMED_GLASS_PANE.getClass().getName()
+        //);
+
+        //CobblemonPaleontologist.LOGGER.info(
+        //        "Framed pane properties: {}",
+        //        ModBlocks.FRAMED_GLASS_PANE.getStateManager().getProperties()
+        //);
+    }
 }
