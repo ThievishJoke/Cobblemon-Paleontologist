@@ -25,7 +25,14 @@ public class ModItemTagProvider extends ItemTagsProvider {
         tag(ModTags.Items.CHISELS)
                 .add(ModItems.IRON_CHISEL.get())
                 .add(ModItems.DIAMOND_CHISEL.get())
-                ;
+                .add(ModItems.NETHERITE_CHISEL.get())
+        ;
+        tag(ModTags.Items.BRUSHES)
+                .add(Items.BRUSH)
+                .add(ModItems.IRON_BRUSH.get())
+                .add(ModItems.DIAMOND_BRUSH.get())
+                .add(ModItems.NETHERITE_BRUSH.get())
+        ;
 
         tag(ModTags.Items.CONCRETION_REWARDS)
                 .add(CobblemonItems.ARMOR_FOSSIL)

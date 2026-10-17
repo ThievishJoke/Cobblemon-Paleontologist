@@ -33,6 +33,11 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         add(ModBlocks.BONE_BLOCK_SLAB.get(),
                 block -> createSlabItemTable(ModBlocks.BONE_BLOCK_SLAB.get()));
         dropSelf(ModBlocks.BONE_BLOCK_STAIRS.get());
+
+        dropSelf(ModBlocks.FRAMED_GLASS.get());
+        dropSelf(ModBlocks.FRAMED_GLASS_PANE.get());
+        add(ModBlocks.FRAMED_GLASS_DOOR.get(),
+                block -> createDoorTable(ModBlocks.FRAMED_GLASS_DOOR.get()));
     }
 
     @Override

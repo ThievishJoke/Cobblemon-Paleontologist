@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/door_top_left_open",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "bottom": "cobblemon_paleontologist:block/framed_glass_door_bottom",
+    "top": "cobblemon_paleontologist:block/framed_glass_door_top"
+  }
+}

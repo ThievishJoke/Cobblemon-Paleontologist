@@ -14,10 +14,20 @@
   "block.cobblemon_paleontologist.bone_end_block": "Кінцевий кістяний блок",
   "block.cobblemon_paleontologist.bone_block_stairs": "Сходи з кістяного блока",
   "block.cobblemon_paleontologist.bone_block_slab": "Плита з кістяного блока",
-  "entity.minecraft.villager.cobblemon_paleontologist.cobblemon_paleontologist": "Палеонтолог",
-  "itemgroup.paleontology_item_group": "Палеонтологія",
+  "block.cobblemon_paleontologist.framed_glass": "Скло в рамці",
+  "block.cobblemon_paleontologist.framed_glass_pane": "Скляна панель в рамці",
+  "block.cobblemon_paleontologist.framed_glass_door": "Скляні двері в рамці",
   "item.cobblemon_paleontologist.iron_chisel": "Залізне долото",
   "item.cobblemon_paleontologist.diamond_chisel": "Діамантове долото",
+  "item.cobblemon_paleontologist.netherite_chisel": "Незеритовий різець",
+  "item.cobblemon_paleontologist.iron_brush": "Залізний пензель",
+  "item.cobblemon_paleontologist.diamond_brush": "Діамантовий пензель",
+  "item.cobblemon_paleontologist.netherite_brush": "Незеритовий пензель",
   "item.cobblemon_paleontologist.fossil_concretion": "Конкреція",
-  "container.paleontology_lab_table": "Лабораторний стіл"
+  "itemgroup.paleontology_item_group": "Палеонтологія",
+  "container.paleontology_lab_table": "Лабораторний стіл",
+  "#cobblemon_paleontologist:brushes": "Пензлі",
+  "#cobblemon_paleontologist:chisels": "Долотa",
+  "#cobblemon_paleontologist:concretion_rewards": "Нагороди за конкреції",
+  "entity.minecraft.villager.cobblemon_paleontologist": "Палеонтолог"
 }

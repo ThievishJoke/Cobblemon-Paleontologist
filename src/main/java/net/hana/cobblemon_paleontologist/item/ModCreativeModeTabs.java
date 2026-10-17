@@ -7,6 +7,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Blocks;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -42,6 +43,14 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.FOSSIL_CONCRETION.get());
                         output.accept(ModItems.IRON_CHISEL.get());
                         output.accept(ModItems.DIAMOND_CHISEL.get());
+                        output.accept(ModItems.NETHERITE_CHISEL.get());
+                        output.accept(Items.BRUSH);
+                        output.accept(ModItems.IRON_BRUSH.get());
+                        output.accept(ModItems.DIAMOND_BRUSH.get());
+                        output.accept(ModItems.NETHERITE_BRUSH.get());
+                        output.accept(ModBlocks.FRAMED_GLASS.get());
+                        output.accept(ModBlocks.FRAMED_GLASS_PANE.get());
+                        output.accept(ModBlocks.FRAMED_GLASS_DOOR.get());
                     }).build()
     );
 

@@ -113,6 +113,8 @@ dependencies {
     implementation("com.cobblemon:neoforge:${project.cobblemon_version}")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:${project.forge_kotlin_version}")
 
+    runtimeOnly("thedarkcolour:kotlinforforge-neoforge:5.10.0")
+
     // Example mod dependency using a mod jar from ./libs with a flat dir repository
     // This maps to ./libs/coolmod-${mc_version}-${coolmod_version}.jar
     // The group id is ignored when searching -- in this case, it is "blank"

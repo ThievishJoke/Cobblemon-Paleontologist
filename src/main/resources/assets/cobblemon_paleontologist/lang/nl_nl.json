@@ -14,10 +14,20 @@
   "block.cobblemon_paleontologist.bone_end_block": "Bot uiteindeblok",
   "block.cobblemon_paleontologist.bone_block_stairs": "Bot bloktrap",
   "block.cobblemon_paleontologist.bone_block_slab": "Bot blokplaat",
-  "entity.minecraft.villager.cobblemon_paleontologist.cobblemon_paleontologist": "Paleontoloog",
-  "itemgroup.paleontology_item_group": "Paleontologie",
+  "block.cobblemon_paleontologist.framed_glass": "Glas met lijst",
+  "block.cobblemon_paleontologist.framed_glass_pane": "Glazen ruit met lijst",
+  "block.cobblemon_paleontologist.framed_glass_door": "Glazen deur met lijst",
   "item.cobblemon_paleontologist.iron_chisel": "IJzeren beitel",
   "item.cobblemon_paleontologist.diamond_chisel": "Diamanten beitel",
+  "item.cobblemon_paleontologist.netherite_chisel": "Netherrietbeitel",
+  "item.cobblemon_paleontologist.iron_brush": "IJzeren borstel",
+  "item.cobblemon_paleontologist.diamond_brush": "Diamanten borstel",
+  "item.cobblemon_paleontologist.netherite_brush": "Netherrietborstel",
   "item.cobblemon_paleontologist.fossil_concretion": "Concretie",
-  "container.paleontology_lab_table": "Labtafel"
+  "itemgroup.paleontology_item_group": "Paleontologie",
+  "container.paleontology_lab_table": "Labtafel",
+  "#cobblemon_paleontologist:brushes": "Kwasten",
+  "#cobblemon_paleontologist:chisels": "Beitels",
+  "#cobblemon_paleontologist:concretion_rewards": "Concretiebeloningen",
+  "entity.minecraft.villager.cobblemon_paleontologist": "Paleontoloog"
 }

@@ -33,9 +33,14 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.WARPED_LAB_TABLE.get())
                 .add(ModBlocks.CRIMSON_LAB_TABLE.get())
                 .add(ModBlocks.APRICORN_LAB_TABLE.get())
+
                 .add(ModBlocks.BONE_END_BLOCK.get())
                 .add(ModBlocks.BONE_BLOCK_STAIRS.get())
                 .add(ModBlocks.BONE_BLOCK_SLAB.get())
+
+                .add(ModBlocks.FRAMED_GLASS.get())
+                .add(ModBlocks.FRAMED_GLASS_PANE.get())
+                .add(ModBlocks.FRAMED_GLASS_DOOR.get())
                 ;
         tag(BlockTags.MINEABLE_WITH_AXE)
                 .add(ModBlocks.LAB_TABLE.get())
@@ -65,5 +70,9 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.CRIMSON_LAB_TABLE.get())
                 .add(ModBlocks.APRICORN_LAB_TABLE.get())
                 ;
+
+        tag(BlockTags.DOORS)
+                .add(ModBlocks.FRAMED_GLASS_DOOR.get())
+        ;
     }
 }

@@ -11,6 +11,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.crafting.SmithingTransformRecipe;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Blocks;
 import net.neoforged.neoforge.common.conditions.IConditionBuilder;
@@ -58,6 +59,48 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_diamond", has(Items.DIAMOND))
                 .save(recipeOutput);
 
+        SmithingTransformRecipeBuilder.smithing(
+                        Ingredient.of(Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE),
+                        Ingredient.of(ModItems.DIAMOND_CHISEL.get()),
+                        Ingredient.of(Items.NETHERITE_INGOT),
+                        RecipeCategory.TOOLS,
+                        ModItems.NETHERITE_CHISEL.get()
+                ).unlocks("has_netherite_ingot", has(Items.NETHERITE_INGOT))
+                .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(
+                        CobblemonPaleontologist.MOD_ID, "netherite_chisel"
+                ));
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.IRON_BRUSH)
+                .pattern(" F ")
+                .pattern(" I ")
+                .pattern(" S ")
+                .define('F', Items.FEATHER)
+                .define('I', Items.IRON_INGOT)
+                .define('S', Items.STICK)
+                .unlockedBy("has_iron", has(Items.IRON_INGOT))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.DIAMOND_BRUSH)
+                .pattern(" F ")
+                .pattern(" D ")
+                .pattern(" S ")
+                .define('F', Items.FEATHER)
+                .define('D', Items.DIAMOND)
+                .define('S', Items.STICK)
+                .unlockedBy("has_diamond", has(Items.DIAMOND))
+                .save(recipeOutput);
+
+        SmithingTransformRecipeBuilder.smithing(
+                        Ingredient.of(Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE),
+                        Ingredient.of(ModItems.DIAMOND_BRUSH.get()),
+                        Ingredient.of(Items.NETHERITE_INGOT),
+                        RecipeCategory.TOOLS,
+                        ModItems.NETHERITE_BRUSH.get()
+                ).unlocks("has_netherite_ingot", has(Items.NETHERITE_INGOT))
+                .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(
+                        CobblemonPaleontologist.MOD_ID, "netherite_brush"
+                ));
+
         SingleItemRecipeBuilder.stonecutting(
                         Ingredient.of(Blocks.BONE_BLOCK),
                         RecipeCategory.BUILDING_BLOCKS,
@@ -80,6 +123,31 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 )
                 .unlockedBy("has_bone_block", has(Blocks.BONE_BLOCK))
                 .save(recipeOutput, modId("bone_end_block_stonecutting"));
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.FRAMED_GLASS)
+                .pattern("III")
+                .pattern("IGI")
+                .pattern("III")
+                .define('I', Items.IRON_NUGGET)
+                .define('G', Items.GLASS)
+                .unlockedBy("has_glass", has(Items.GLASS))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModBlocks.FRAMED_GLASS_PANE)
+                .pattern("   ")
+                .pattern("III")
+                .pattern("III")
+                .define('I', ModBlocks.FRAMED_GLASS)
+                .unlockedBy("has_glass", has(Items.GLASS))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModBlocks.FRAMED_GLASS_DOOR)
+                .pattern("II ")
+                .pattern("II ")
+                .pattern("II ")
+                .define('I', ModBlocks.FRAMED_GLASS)
+                .unlockedBy("has_glass", has(Items.GLASS))
+                .save(recipeOutput);
     }
 
     private void createLabTableRecipe(RecipeOutput out, ItemLike result, ItemLike planks) {

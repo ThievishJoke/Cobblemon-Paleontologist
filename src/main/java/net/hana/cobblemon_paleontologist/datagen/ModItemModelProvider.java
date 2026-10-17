@@ -19,6 +19,10 @@ public class ModItemModelProvider extends ItemModelProvider {
     protected void registerModels() {
         handheldItem(ModItems.IRON_CHISEL);
         handheldItem(ModItems.DIAMOND_CHISEL);
+        handheldItem(ModItems.NETHERITE_CHISEL);
+        handheldItem(ModItems.IRON_BRUSH);
+        handheldItem(ModItems.DIAMOND_BRUSH);
+        handheldItem(ModItems.NETHERITE_BRUSH);
         handheldItem(ModItems.FOSSIL_CONCRETION);
     }
 

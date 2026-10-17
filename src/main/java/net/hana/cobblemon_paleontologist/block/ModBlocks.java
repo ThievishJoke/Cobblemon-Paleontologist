@@ -8,6 +8,7 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -79,6 +80,17 @@ public class ModBlocks {
                             Blocks.BONE_BLOCK.defaultBlockState(),
                             BlockBehaviour.Properties.ofFullCopy(Blocks.BONE_BLOCK)
                     ));
+
+    public static final DeferredBlock<Block> FRAMED_GLASS =
+            registerBlock("framed_glass",
+                    () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS)));
+
+    public static final DeferredBlock<IronBarsBlock> FRAMED_GLASS_PANE =
+            registerBlock("framed_glass_pane",
+                    () -> new IronBarsBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS_PANE)));
+
+    public static final DeferredBlock<DoorBlock> FRAMED_GLASS_DOOR = registerBlock("framed_glass_door",
+            () -> new DoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().noOcclusion()));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
