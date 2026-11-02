@@ -33,22 +33,6 @@ repositories {
         name = "Impact"
         url = "https://maven.impactdev.net/repository/development/"
     }
-    //maven{
-    //    name = "Cobbled"
-    //    url = "https://maven.cobbled-creators.org/releases/"
-    //}
-    //maven {
-    //    name = "Terraformers"
-    //    url = "https://maven.terraformersmc.com"
-    //}
-    //maven {
-    //    name = "ModMaven"
-    //    url = "https://modmaven.dev"
-    //}
-    //maven {
-    //    name = "Modrinth"
-    //    url = "https://api.modrinth.com/maven"
-    //}
 }
 
 dependencies {
@@ -101,5 +85,30 @@ java {
 jar {
     from("LICENSE") {
         rename { "${it}_${project.archivesBaseName}" }
+    }
+}
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            artifact(remapJar)
+            artifact(sourcesJar)
+
+            groupId = project.maven_group
+            artifactId = project.archives_base_name
+            version = project.version
+        }
+    }
+
+    repositories {
+        maven {
+            name = "CobbledCreators"
+            url = uri("https://maven.cobbled-creators.org/releases/")
+
+            credentials {
+                username = project.findProperty("cobbledMavenUsername")
+                password = project.findProperty("cobbledMavenPassword")
+            }
+        }
     }
 }
